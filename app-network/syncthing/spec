@@ -3,3 +3,4 @@ SRCS="tbl::https://github.com/syncthing/syncthing/releases/download/v$VER/syncth
 CHKSUMS="sha256::d17699e3233127dd7f1315b41bec3926fdac42b6beeca4fcb6f05b1e25ed9941"
 CHKUPDATE="anitya::id=11814"
 SUBDIR="."
+REL=1
