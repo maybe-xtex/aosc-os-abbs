@@ -9,6 +9,6 @@ AUTOTOOLS_AFTER=(
 )
 
 # FIXME: make[2]: *** No rule to make target '/config.status', needed by 'Makefile'.  Stop.
-ABSHADOW=0
+RECONF=0
 
 ABHOST=optenv32
