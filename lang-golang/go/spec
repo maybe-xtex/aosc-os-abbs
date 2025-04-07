@@ -1,14 +1,14 @@
-UPSTREAM_VER=1.24.1
+UPSTREAM_VER=1.24.2
 # Versions of Golang, net library and Go tools
 GO_VER=${UPSTREAM_VER/\~/}
 TOOLS_VER=0.31.0
-NET_VER=0.37.0
+NET_VER=0.38.0
 
 VER="${UPSTREAM_VER}+tools${TOOLS_VER}+net${NET_VER}"
 SRCS="tbl::https://go.dev/dl/go${GO_VER}.src.tar.gz \
       git::commit=tags/v${TOOLS_VER};rename=tools::https://go.googlesource.com/tools \
       git::commit=tags/v${NET_VER};rename=net::https://github.com/golang/net"
-CHKSUMS="sha256::8244ebf46c65607db10222b5806aeb31c1fcf8979c1b6b12f60c677e9a3c0656 \
+CHKSUMS="sha256::9dc77ffadc16d837a1bf32d99c624cb4df0647cee7b119edd9e7b1bcc05f2e00 \
          SKIP \
          SKIP"
 CHKUPDATE="anitya::id=1227"
