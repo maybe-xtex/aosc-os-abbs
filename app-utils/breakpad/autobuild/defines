@@ -1,8 +1,0 @@
-PKGNAME=breakpad
-PKGSEC=utils
-PKGDEP="glibc"
-PKGDES="Multi-platform crash reporting system"
-
-NOSTATIC=0
-
-FAIL_ARCH="(ppc64|powerpc)"
