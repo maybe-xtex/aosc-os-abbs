@@ -1,6 +1,0 @@
-PKGNAME=botan-3
-PKGSEC=libs
-PKGDES="C++ cryptography library (version 3)"
-BUILDDEP="docutils"
-
-AB_FLAGS_O3=1
