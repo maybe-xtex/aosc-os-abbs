@@ -11,11 +11,6 @@ export PATH="$SRCDIR:$PATH"
 
 sed -e 's|^EXTRAVERSION = -rc.*|EXTRAVERSION =|g' -i Makefile
 
-if [[ "${CROSS:-$ARCH}" = "mips64r6el" ]] ; then
-	# Work around LD's brainlessness
-	export LDEMULATION="elf64ltsmip"
-fi
-
 # $1 = toolchain program name (say rustc / bindgen)
 # $2 = path to config
 # prints toolchain version used in the kernel config or kernel minimum if not specified

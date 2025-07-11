@@ -10,7 +10,7 @@ case "$1" in
 	"loongarch64")
 		echo -n "loongarch"
 		;;
-	"loongson3" | "mips64r6el")
+	"loongson3")
 		echo -n "mips"
 		;;
 	"ppc64el")
