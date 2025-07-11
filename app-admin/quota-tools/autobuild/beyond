@@ -1,9 +1,5 @@
-# FIXME: Somehow these two file do not exist while building for mips64r6el.
-if [ -e "$PKGDIR"/usr/include/rpcsvc/rquota.h ]; then
-    abinfo "Dropping files from rpcsvc-proto ..."
-    rm -v "$PKGDIR"/usr/include/rpcsvc/rquota.h
-fi
-if [ -e "$PKGDIR"/usr/include/rpcsvc/rquota.x ]; then
-    abinfo "Removing unused rquota.x..."
-    rm -v "$PKGDIR"/usr/include/rpcsvc/rquota.x
-fi
+abinfo "Dropping files from rpcsvc-proto ..."
+rm -v "$PKGDIR"/usr/include/rpcsvc/rquota.h
+
+abinfo "Removing unused rquota.x..."
+rm -v "$PKGDIR"/usr/include/rpcsvc/rquota.x
