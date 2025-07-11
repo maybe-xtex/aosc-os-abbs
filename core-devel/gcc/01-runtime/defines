@@ -93,9 +93,6 @@ AUTOTOOLS_AFTER__LOONGSON3="$AUTOTOOLS_AFTER ${AUTOTOOLS_AFTER__NOGO/,ada/} \
                         --with-tune=gs464e --with-mips-fix-loongson3-llsc"
 AUTOTOOLS_AFTER__M68K="$AUTOTOOLS_AFTER $AUTOTOOLS_AFTER__RETRO \
                         --with-cpu=68020"
-AUTOTOOLS_AFTER__MIPS64R6EL="$AUTOTOOLS_AFTER $AUTOTOOL_AFTER__NOGO \
-                        --with-arch=mips64r6 --with-tune=mips64r6 \
-                        --with-compact-branches=always"
 AUTOTOOLS_AFTER__POWERPC="$AUTOTOOLS_AFTER $AUTOTOOLS_AFTER__RETRO \
                         --with-cpu=G3 --with-tune=G4 \
                         --with-long-double-128 --enable-secureplt"
