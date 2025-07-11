@@ -14,8 +14,6 @@ elif ab_match_arch "+(loongson2f|loongson3)" ; then
     ARCH_OPTS="linux64-mips64"
 elif ab_match_arch "m68k" ; then
     ARCH_OPTS="linux-generic32"
-elif ab_match_arch "mips64r6el" ; then
-    ARCH_OPTS="linux-generic64"
 elif ab_match_arch "powerpc" ; then
     ARCH_OPTS="linux-ppc"
 elif ab_match_arch "ppc64" ; then
