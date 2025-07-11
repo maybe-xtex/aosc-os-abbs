@@ -5,6 +5,3 @@ PKGDEP="glib"
 BUILDDEP="go"
 
 ABTYPE=plainmake
-
-# FIXME: missing go
-FAIL_ARCH="mips64r6el"
