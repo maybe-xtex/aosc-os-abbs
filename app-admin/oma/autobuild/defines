@@ -22,6 +22,5 @@ CARGO_AFTER__LOONGARCH64_NOSIMD="--no-default-features --features aosc,generic"
 
 # FIXME: ld.lld is not yet available.
 NOLTO__LOONGSON3=1
-NOLTO__MIPS64R6EL=1
 
 PKGESS=1
