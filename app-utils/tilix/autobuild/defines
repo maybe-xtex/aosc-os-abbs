@@ -16,4 +16,4 @@ PKGEPOCH=1
 # when LTO is enabled
 NOLTO__RISCV64=1
 # FIXME: LDC does not build on these architectures.
-FAIL_ARCH="(loongson3|mips64r6el|ppc64el)"
+FAIL_ARCH="(loongson3|ppc64el)"
