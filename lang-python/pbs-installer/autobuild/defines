@@ -1,0 +1,9 @@
+PKGNAME=pbs-installer
+PKGSEC=python
+PKGDEP="python-3 httpx zstandard"
+BUILDDEP="pdm-backend"
+PKGDES="Installer for Python Build Standalone"
+
+ABHOST=noarch
+ABTYPE=pep517
+NOPYTHON2=1
