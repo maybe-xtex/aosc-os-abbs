@@ -1,12 +1,15 @@
 PKGNAME=talosctl
 PKGDES="Utility for controling Talos, a container-optimized Linux distro"
-BUILDDEP="go git"
+BUILDDEP="go"
 PKGDEP="glibc"
 PKGSUG="kubectl"
 PKGSEC=admin
 
 ABTYPE=gomod
-ABSPLITDBG=0
 GO_PACKAGES=(
 	"cmd/talosctl"
 )
+
+# FIXME: github.com/siderolabs/go-blockdevice/v2@v2.0.16/block/device_linux.go:130:12:
+# cannot use st.Rdev (variable of type uint32) as uint64 value in assignment 
+FAIL_ARCH="(loongson3)"
