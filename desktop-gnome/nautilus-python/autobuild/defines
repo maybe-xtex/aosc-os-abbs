@@ -1,5 +1,9 @@
 PKGNAME=nautilus-python
 PKGDES="Python bindings for the Nautilus Extension Framework"
 PKGSEC=gnome
-PKGDEP="nautilus python-2 pygobject-3"
-BUILDDEP="gtk-doc"
+PKGDEP="nautilus python-3 pygobject-3"
+BUILDDEP="gtk-doc gnome-common"
+
+ABTYPE=autotools
+
+AUTOTOOLS_AFTER="PYTHON=/usr/bin/python3"

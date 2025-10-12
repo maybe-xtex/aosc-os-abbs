@@ -1,5 +1,6 @@
 VER=1.2.3
-REL=3
-SRCS="tbl::https://download.gnome.org/sources/nautilus-python/${VER:0:3}/nautilus-python-${VER}.tar.xz"
-CHKSUMS="sha256::073ce0297282259937ab473d189b97a04f42b97197c9292fc3bde9d135282098"
+REL=4
+_TAG_NAME=NAUTILUS_PYTHON_${VER//./_}  # e.g. NAUTILUS_PYTHON_1_2_3
+SRCS="git::commit=tags/$_TAG_NAME::https://gitlab.gnome.org/GNOME/nautilus-python.git"
+CHKSUMS="SKIP"
 CHKUPDATE="anitya::id=228583"
