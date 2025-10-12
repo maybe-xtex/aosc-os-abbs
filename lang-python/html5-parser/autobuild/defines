@@ -1,5 +1,9 @@
 PKGNAME=html5-parser
 PKGSEC=python
-PKGDEP="beautifulsoup4 chardet lxml python-2 python-3"
-BUILDDEP="setuptools setuptools-python2"
+PKGDEP="beautifulsoup4 chardet lxml python-3"
+BUILDDEP="setuptools-python3"
 PKGDES="Fast C based HTML 5 parsing for python"
+
+ABTYPE=python
+
+NOPYTHON2=1
