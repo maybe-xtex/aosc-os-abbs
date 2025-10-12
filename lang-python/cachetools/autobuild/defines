@@ -1,7 +1,10 @@
 PKGNAME="cachetools"
 PKGDES="Extensible memoizing collections and decorators"
-PKGDEP="python-2 python-3"
-BUILDDEP="setuptools setuptools-python2"
+PKGDEP="python-3"
+BUILDDEP="setuptools-python3"
 PKGSEC=python
 
 ABHOST=noarch
+ABTYPE=python
+
+NOPYTHON2=1

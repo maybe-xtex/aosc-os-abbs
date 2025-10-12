@@ -1,5 +1,5 @@
 VER=3.1.0
-REL=4
-SRCS="tbl::https://github.com/tkem/cachetools/archive/v$VER.tar.gz"
-CHKSUMS="sha256::9863c750b563850db89c73332b8f7b92ec8de03050daf396b84d89b48fb009e3"
+REL=5
+SRCS="pypi::version=$VER::cachetools"
+CHKSUMS="sha256::9efcc9fab3b49ab833475702b55edd5ae07af1af7a4c627678980b45e459c460"
 CHKUPDATE="anitya::id=7022"
