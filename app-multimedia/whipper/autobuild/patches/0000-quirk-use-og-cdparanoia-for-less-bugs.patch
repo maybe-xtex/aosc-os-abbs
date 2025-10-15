@@ -1,4 +1,4 @@
-From 3ec468c02e9832466ab7971eb776be3b99cbef9f Mon Sep 17 00:00:00 2001
+From 43378fc3d96b74ec3980cdc9032bcc492f11cf92 Mon Sep 17 00:00:00 2001
 From: Tianhao Chai <cth451@gmail.com>
 Date: Wed, 15 Dec 2021 21:32:35 -0600
 Subject: [PATCH] quirk: use og cdparanoia for less bugs
@@ -78,5 +78,5 @@ index 5c4b779..8745c5d 100644
      def readbyteserr(self, bytes_stderr):
          self._output.append(bytes_stderr)
 -- 
-2.30.2
+2.51.0
 

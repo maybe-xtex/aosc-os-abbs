@@ -2,7 +2,7 @@ PKGNAME=whipper
 PKGSEC=sound
 PKGDEP="cdparanoia pygobject-3 cdrdao python-musicbrainzngs mutagen \
         python-discid \
-        pycdio libsndfile flac sox idna requests ruamel-yaml"
+        pycdio libsndfile flac sox idna requests ruamel-yaml packaging"
 BUILDDEP="setuptools wheel"
 PKGDES="Python CD-DA ripper preferring accuracy over speed"
 PKGPROV="accuraterip-checksum"
