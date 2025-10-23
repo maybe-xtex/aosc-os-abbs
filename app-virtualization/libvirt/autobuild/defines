@@ -9,6 +9,7 @@ PKGDEP="avahi bridge-utils curl cyrus-sasl dbus dmidecode dnsmasq \
 BUILDDEP="docutils qemu zfs rpcsvc-proto firewalld wireshark"
 # FIXME: LTS kernel not yet available for these architectures.
 BUILDDEP__LOONGARCH64="${BUILDDEP/zfs/}"
+BUILDDEP__LOONGARCH64_NOSIMD="${BUILDDEP/zfs/}"
 BUILDDEP__LOONGSON3="${BUILDDEP/zfs/}"
 BUILDDEP__RISCV64="${BUILDDEP/zfs/}"
 PKGSUG="zfs"
