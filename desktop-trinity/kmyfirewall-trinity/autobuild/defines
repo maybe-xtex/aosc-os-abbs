@@ -2,7 +2,7 @@ PKGNAME=kmyfirewall-trinity
 PKGSEC=Trinity
 PKGDEP="iptables tdelibs"
 BUILDDEP="tde-common-cmake"
-PKGDES="An iptables-based firewall for the Trinity Desktop Environment"
+PKGDES="iptables-based firewall for the Trinity Desktop Environment"
 
 PKGCONFL="kmyfirewall"
 
