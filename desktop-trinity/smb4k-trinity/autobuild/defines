@@ -2,7 +2,7 @@ PKGNAME=smb4k-trinity
 PKGSEC=Trinity
 PKGDEP="samba tdebase tdelibs"
 BUILDDEP="tde-common-cmake"
-PKGDES="A Samba (SMB) share browser for the Trinity Desktop Environment"
+PKGDES="Samba (SMB) share browser for the Trinity Desktop Environment"
 
 PKGCONFL="smb4k"
 
