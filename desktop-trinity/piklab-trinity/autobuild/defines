@@ -2,7 +2,7 @@ PKGNAME=piklab-trinity
 PKGSEC=Trinity
 PKGDEP="libusb-compat tdelibs"
 BUILDDEP="tde-common-cmake"
-PKGDES="An PIC-microcontroller IDE (Integrated Development Environment) for the Trinity Desktop Environment"
+PKGDES="PIC-microcontroller IDE (Integrated Development Environment) for the Trinity Desktop Environment"
 
 PKGCONFL="piklab"
 
