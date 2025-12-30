@@ -1,0 +1,12 @@
+abinfo "Removing unnecessary files ..."
+sed -i "s/INCLUDES/AM_CPPFLAGS/g" gconf/Makefile.am
+sed -i "s/INCLUDES/AM_CPPFLAGS/g" tests/Makefile.am
+sed -i "s/INCLUDES/AM_CPPFLAGS/g" examples/Makefile.am
+sed -i "s/INCLUDES/AM_CPPFLAGS/g" backends/Makefile.am
+sed -i "s/INCLUDES/AM_CPPFLAGS/g" defaults/Makefile.am
+rm -v ABOUT-NLS aclocal.m4 backends/Makefile.in config.guess config.h.in \
+    config.sub configure defaults/Makefile.in depcomp \
+    doc/gconf/Makefile.in doc/Makefile.in examples/Makefile.in \
+    gconf/Makefile.in gsettings/Makefile.in INSTALL install-sh \
+    intltool-extract.in intltool-merge.in intltool-update.in ltmain.sh \
+    Makefile.in missing po/Makefile.in.in tests/Makefile.in

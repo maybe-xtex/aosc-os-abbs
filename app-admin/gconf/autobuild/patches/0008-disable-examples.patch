@@ -1,0 +1,26 @@
+diff --git a/Makefile.am b/Makefile.am
+index 8f85c11f..c44f20cf 100644
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -1,7 +1,7 @@
+ 
+-SUBDIRS = gconf backends po doc examples
++SUBDIRS = gconf backends po doc
+ 
+-DIST_SUBDIRS = tests gconf backends po doc examples defaults gsettings
++DIST_SUBDIRS = tests gconf backends po doc defaults gsettings
+ 
+ if ENABLE_DEFAULTS_SERVICE
+ SUBDIRS += defaults
+diff --git a/configure.ac b/configure.ac
+index 69a57e64..366e61ef 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -377,7 +377,6 @@ backends/Makefile
+ po/Makefile.in
+ doc/Makefile
+ doc/gconf/Makefile
+-examples/Makefile
+ tests/Makefile
+ defaults/Makefile
+ gsettings/Makefile

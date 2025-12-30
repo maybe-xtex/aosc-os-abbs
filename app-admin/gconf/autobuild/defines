@@ -1,7 +1,8 @@
 PKGNAME=gconf
 PKGSEC=gnome
 PKGDEP="dbus-glib polkit libxml2"
-BUILDDEP="gtk-doc gobject-introspection intltool"
+# FIXME: this project requires gtk-doc even if it's disabled
+BUILDDEP="gobject-introspection intltool libtool gtk-doc"
 PKGDES="GConf configuration database system"
 
 # FIXME: Re-generation fails.
@@ -9,10 +10,14 @@ PKGDES="GConf configuration database system"
 # configure:20829: error: possibly undefined macro: AM_NLS
 #       If this token and others are legitimate, please use m4_pattern_allow.
 #       See the Autoconf documentation.
-RECONF=0
+# RECONF=0
 AUTOTOOLS_AFTER=(
-    '--disable-orbit'
+    '--disable-static'
     '--enable-defaults-service'
+    '--disable-orbit'
+    '--without-openldap'
+    '--disable-gsettings-backend'
+    '--disable-gtk-doc'
 )
 
 # Note: Extra Provides for Spiral, gconf has been removed from Ubuntu's
