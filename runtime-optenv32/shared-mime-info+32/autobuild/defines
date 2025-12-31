@@ -4,11 +4,11 @@ PKGDEP="aosc-aaa+32 glib+32 libxml2+32 shared-mime-info"
 BUILDDEP="devel-base+32"
 PKGDES="Freedesktop.org shared MIME info (32-bit x86 runtime)"
 
-# Note: Do not run this during build-time.
-AUTOTOOLS_AFTER=(
-    '--disable-update-mimedb'
+ABTYPE=meson
+MESON_AFTER=(
+    "-Dwrap_mode=default"
+    "-Dupdate-mimedb=true"
+    "-Dbuild-tests=false"
 )
-# FIXME: Installation may fail with parallelism.
-NOPARALLEL=1
 
 ABHOST=optenv32
