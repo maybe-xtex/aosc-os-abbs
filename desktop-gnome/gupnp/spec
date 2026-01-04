@@ -1,4 +1,5 @@
 VER=1.6.9
+REL=1
 SRCS="tbl::https://download.gnome.org/sources/gupnp/${VER:0:3}/gupnp-$VER.tar.xz"
 CHKSUMS="sha256::2edb6ee3613558e62f538735368aee27151b7e09d4e2e2c51606833da801869b"
 CHKUPDATE="anitya::id=1281"
