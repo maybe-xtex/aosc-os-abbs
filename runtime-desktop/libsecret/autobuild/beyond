@@ -1,0 +1,3 @@
+abinfo "Installing PAM module ..."
+install -Dvm755 "$BLDDIR"/pam/pam_gnome_keyring.so \
+    "$PKGDIR"/usr/lib/security/pam_gnome_keyring.so
