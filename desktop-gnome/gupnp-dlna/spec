@@ -1,4 +1,5 @@
 VER=0.12.0
+REL=1
 SRCS="tbl::https://download.gnome.org/sources/gupnp-dlna/${VER:0:4}/gupnp-dlna-$VER.tar.xz"
 CHKSUMS="sha256::3d53b96f85bc5628d33e367ec9bf2adb38ef2b34d7ad0434a6ba0cf4ad9048e6"
 CHKUPDATE="anitya::id=1283"
