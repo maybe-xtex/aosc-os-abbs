@@ -1,4 +1,4 @@
-VER=42.4
+VER=44.5
 SRCS="https://download.gnome.org/sources/gnome-desktop/${VER%%.*}/gnome-desktop-$VER.tar.xz"
-CHKSUMS="sha256::1ce2c9d5067969dbe0b282ea5a9acfb8698751f03cd07e2c730240f85dc9ad25"
+CHKSUMS="sha256::20e0995a6e3a03e8c1026c5a27bc3f45e69ffcc392ad743dcab6107a541d232f"
 CHKUPDATE="anitya::id=13127"
