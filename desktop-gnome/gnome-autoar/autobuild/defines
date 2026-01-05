@@ -1,13 +1,14 @@
 PKGNAME=gnome-autoar
 PKGSEC=gnome
 PKGDEP="gtk-3"
-BUILDDEP="gnome-common gobject-introspection gtk-doc vala"
+BUILDDEP="gobject-introspection vala"
 PKGDES="Archives integration support for GNOME"
 
-PKGEPOCH=1
-
 ABTYPE=meson
-MESON_AFTER="-Dgtk=true \
-             -Dintrospection=enabled \
-             -Dvapi=true \
-             -Dgtk_doc=true"
+MESON_AFTER=(
+    '-Dgtk=true'
+    '-Dintrospection=enabled'
+    '-Dvapi=true'
+    '-Dtests=false'
+    '-Dgtk_doc=false'
+)
