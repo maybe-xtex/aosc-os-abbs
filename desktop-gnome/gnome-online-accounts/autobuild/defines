@@ -1,26 +1,24 @@
 PKGNAME=gnome-online-accounts
 PKGSEC=gnome
-PKGDEP="gcr json-glib krb5 libaccounts-glib libnotify libsecret rest \
+PKGDEP="gcr-4 json-glib krb5 libaccounts-glib libnotify libsecret rest \
         telepathy-glib webkit2gtk"
-BUILDDEP="docbook-xsl gobject-introspection gtk-doc intltool libxslt vala"
+BUILDDEP="gobject-introspection vala"
 PKGDES="GNOME service to access online accounts"
 
 ABTYPE=meson
-MESON_AFTER="-Dgoabackend=true \
-             -Dinspector=false \
-             -Dexchange=true \
-             -Dfacebook=true \
-             -Dfedora=true \
-             -Dflickr=true \
-             -Dfoursquare=true \
-             -Dgoogle=true \
-             -Dimap_smtp=true \
-             -Dkerberos=true \
-             -Dlastfm=true \
-             -Dmedia_server=true \
-             -Downcloud=true \
-             -Dwindows_live=true \
-             -Dgtk_doc=true \
-             -Dintrospection=true \
-             -Dman=true \
-             -Dvapi=true"
+MESON_AFTER=(
+    '-Dgoabackend=true'
+    '-Dexchange=true'
+    '-Dfedora=true'
+    '-Dgoogle=true'
+    '-Dimap_smtp=true'
+    '-Dkerberos=true'
+    '-Downcloud=true'
+    '-Dwebdav=true'
+    '-Dms_graph=true'
+    '-Dgtk_doc=false'
+    '-Ddocumentation=false'
+    '-Dintrospection=true'
+    '-Dman=true'
+    '-Dvapi=true'
+)
