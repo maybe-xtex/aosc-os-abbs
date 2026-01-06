@@ -1,0 +1,4 @@
+VER=3.10.1
+SRCS="git::commit=tags/$VER::https://gitlab.gnome.org/GNOME/tinysparql.git"
+CHKSUMS="SKIP"
+CHKUPDATE="anitya::id=5578"

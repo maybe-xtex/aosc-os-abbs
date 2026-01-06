@@ -1,0 +1,24 @@
+PKGNAME=tinysparql
+PKGSEC=gnome
+PKGDEP="avahi icu json-glib libsoup-3 pygobject-3 snowball"
+PKGRECOM="localsearch"
+BUILDDEP="asciidoc gobject-introspection vala"
+PKGDES="RDF triplestore with SPARQL 1.1 interface"
+
+ABTYPE=meson
+MESON_AFTER=(
+    '-Ddocs=false'
+    '-Dman=true'
+    '-Doverride_sqlite_version_check=false'
+    '-Dstemmer=enabled'
+    '-Dunicode_support=icu'
+    '-Davahi=enabled'
+    '-Dbash_completion=true'
+    '-Dsystemd_user_services=true'
+    '-Dintrospection=enabled'
+    '-Dvapi=enabled'
+    '-Dbuiltin_modules=false'
+)
+
+PKGBREAK="tracker"
+PKGREP="tracker"
