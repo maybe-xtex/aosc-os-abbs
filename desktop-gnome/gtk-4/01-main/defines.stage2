@@ -1,7 +1,7 @@
 PKGNAME=gtk-4
 PKGSEC=x11
 PKGDEP="cairo colord cups dconf desktop-file-utils fontconfig fribidi \
-        gdk-pixbuf glib graphene gstreamer libpng libxkbcommon harfbuzz \
+        gdk-pixbuf glib graphene libpng libxkbcommon harfbuzz \
         iso-codes libcloudproviders libepoxy librsvg libtiff libjpeg-turbo \
         pango shared-mime-info tinysparql vulkan-loader wayland x11-lib"
 BUILDDEP="docutils gobject-introspection shaderc wayland-protocols vulkan"
@@ -11,7 +11,7 @@ MESON_AFTER=(
     '-Dx11-backend=true'
     '-Dwayland-backend=true'
     '-Dbroadway-backend=true'
-    '-Dmedia-gstreamer=enabled'
+    '-Dmedia-gstreamer=disabled'
     '-Dprint-cups=enabled'
     '-Dvulkan=enabled'
     '-Dcloudproviders=enabled'
