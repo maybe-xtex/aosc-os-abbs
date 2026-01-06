@@ -1,5 +1,5 @@
 PKGNAME=dconf-editor
 PKGSEC=gnome
-PKGDEP="dconf gtk-3 glib libhandy gtk-update-icon-cache"
-BUILDDEP="gtk-doc intltool vala meson ninja gtk-4"
-PKGDES="An editor for DConf settings"
+PKGDEP="dconf desktop-file-utils glib gtk-3 libhandy"
+BUILDDEP="vala"
+PKGDES="GSettings editor for GNOME"
