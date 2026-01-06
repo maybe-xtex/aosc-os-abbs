@@ -1,10 +1,11 @@
 PKGNAME=gvfs
 PKGSEC=gnome
-PKGDEP="avahi dconf fuse fuse-3 gnome-online-accounts libarchive libbluray \
-        libcdio-paranoia libgdata libgphoto2 libgudev libimobiledevice libmtp \
-        libnfs libplist libsecret libsoup-3 samba udisks-2 usbmuxd"
+PKGDEP="avahi dconf fuse fuse-3 gcr-4 gnome-online-accounts libarchive \
+        libbluray libcdio-paranoia libgdata libgphoto2 libgudev \
+        libimobiledevice libmtp libnfs libplist libsecret libsoup-3 msgraph \
+        samba udisks-2 usbmuxd"
 BUILDDEP="docbook-xsl"
-PKGDES="Userspace virtual filesystem implemented as pluggable modules to GIO"
+PKGDES="Userspace virtual filesystem for GIO"
 
 ABTYPE=meson
 MESON_AFTER=(
@@ -12,6 +13,7 @@ MESON_AFTER=(
     '-Dafc=true'
     '-Dafp=true'
     '-Darchive=true'
+    '-Dburn=true'
     '-Dcdda=true'
     '-Ddnssd=true'
     '-Dgoa=true'
@@ -20,9 +22,11 @@ MESON_AFTER=(
     '-Dhttp=true'
     '-Dmtp=true'
     '-Dnfs=true'
+    '-Donedrive=true'
     '-Dsftp=true'
     '-Dsmb=true'
     '-Dudisks2=true'
+    '-Dwsdd=true'
     '-Dbluray=true'
     '-Dfuse=true'
     '-Dgcr=true'
@@ -31,7 +35,9 @@ MESON_AFTER=(
     '-Dkeyring=true'
     '-Dlogind=true'
     '-Dlibusb=true'
-    '-Ddevel_utils=true'
+    '-Ddeprecated_apis=false'
+    '-Ddevel_utils=false'
     '-Dinstalled_tests=false'
     '-Dman=true'
+    '-Dunit_tests=false'
 )

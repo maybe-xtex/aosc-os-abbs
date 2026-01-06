@@ -1,5 +1,4 @@
-VER=1.50.2
-REL=3
+VER=1.58.1
 SRCS="https://download.gnome.org/sources/gvfs/${VER:0:4}/gvfs-$VER.tar.xz"
-CHKSUMS="sha256::03d72b8c15ef438110f0cf457b5655266c8b515d0412b30f4d55cfa0da06ac5e"
+CHKSUMS="sha256::fc537d6bbab1ffa76972df7d4a1819b0c0fe19ebd1dfe82421d1f32e14b5dc3b"
 CHKUPDATE="anitya::id=5496"
