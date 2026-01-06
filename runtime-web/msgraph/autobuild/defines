@@ -1,0 +1,11 @@
+PKGNAME=msgraph
+PKGSEC=libs
+PKGDEP="glib gnome-online-accounts json-glib libsoup-3"
+BUILDDEP="gobject-introspection gtk-doc"
+PKGDES="Library to access MS Graph API for Microsoft 365"
+
+MESON_AFTER=(
+    '-Dintrospection=true'
+    '-Dgtk_doc=false'
+    '-Dtests=false'
+)
