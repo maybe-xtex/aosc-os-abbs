@@ -1,30 +1,41 @@
 PKGNAME=mutter
 PKGSEC=gnome
-PKGDEP="dconf gobject-introspection gsettings-desktop-schemas libcanberra \
-        startup-notification zenity gnome-desktop upower libinput \
-        gnome-settings-daemon egl-wayland pipewire xorg-server graphene \
-        wayland-protocols xwayland libgudev libwacom"
-BUILDDEP="gi-docgen gobject-introspection gtk-doc intltool tdb"
+PKGDEP="dconf egl-wayland gnome-settings-daemon graphene \
+        gsettings-desktop-schemas gtk-4 libadwaita libdisplay-info libei \
+        libinput libwacom pipewire startup-notification"
+BUILDDEP="argcomplete docutils gobject-introspection"
 PKGDES="Window manager for GNOME"
 
-MESON_AFTER="-Dopengl=true \
-             -Dgles2=true \
-             -Degl=true \
-             -Dglx=true \
-             -Dwayland=true \
-             -Dsystemd=true \
-             -Dnative_backend=true \
-             -Dremote_desktop=true \
-             -Degl_device=true \
-             -Dwayland_eglstream=true \
-             -Dudev=true \
-             -Dlibwacom=true \
-             -Dpango_ft2=true \
-             -Dstartup_notification=true \
-             -Dsm=true \
-             -Dintrospection=true \
-             -Ddocs=true \
-             -Dprofiler=false \
-             -Dverbose=true \
-             -Dxwayland_initfd=enabled"
-
+ABTYPE=meson
+MESON_AFTER=(
+    '-Dopengl=true'
+    '-Dgles2=true'
+    '-Degl=true'
+    '-Dxwayland=true'
+    '-Dlogind=true'
+    '-Dnative_backend=true'
+    '-Dremote_desktop=true'
+    '-Dlibgnome_desktop=true'
+    '-Degl_device=true'
+    '-Dwayland_eglstream=true'
+    '-Dudev=true'
+    '-Dlibwacom=true'
+    '-Dsound_player=true'
+    '-Dstartup_notification=true'
+    '-Dintrospection=true'
+    '-Ddocs=false'
+    '-Dcogl_tests=false'
+    '-Dclutter_tests=false'
+    '-Dmutter_tests=false'
+    '-Dtests=disabled'
+    '-Dkvm_tests=false'
+    '-Dtty_tests=false'
+    '-Dprofiler=false'
+    '-Dinstalled_tests=false'
+    '-Dverbose=true'
+    '-Dxwayland_initfd=enabled'
+    '-Dcatch=false'
+    '-Dfonts=true'
+    '-Dbash_completion=true'
+    '-Ddevkit=disabled'
+)
