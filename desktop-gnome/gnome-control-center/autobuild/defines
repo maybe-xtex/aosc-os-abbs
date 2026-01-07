@@ -1,19 +1,23 @@
 PKGNAME=gnome-control-center
 PKGSEC=gnome
-PKGDEP="accountsservice cheese clutter-gtk clutter-gst-3.0 gnome-bluetooth \
-        gnome-desktop gnome-online-accounts gnome-settings-daemon \
-        gnome-user-share grilo gsettings-desktop-schemas libibus libgnomekbd \
-        libgtop libpwquality modemmanager network-manager-applet openssh \
-        samba upower colord-gtk rygel system-config-printer gnome-keyring \
-        gnome-color-manager sound-theme-freedesktop udisks-2 libhandy \
-        gsound malcontent libgudev libwacom"
-BUILDDEP="docbook-xsl gtk-doc intltool modemmanager"
-PKGDES="An aggregated settings utility for GNOME"
+PKGDEP="accountsservice colord-gtk gnome-bluetooth gnome-desktop \
+        gnome-online-accounts gnome-settings-daemon libadwaita libgtop \
+        libibus libnma libsoup-3 libwacom malcontent tecla udisks-2"
+BUILDDEP="blueprint-compiler"
+PKGDES="Control center for GNOME"
 
-MESON_AFTER="-Ddocumentation=true \
-             -Dibus=true \
-             -Dprivileged_group=wheel \
-             -Dsnap=false \
-             -Dtracing=false \
-             -Dwayland=true \
-             -Dmalcontent=true"
+ABTYPE=meson
+MESON_AFTER=(
+    '-Ddeprecated-declarations=disabled'
+    '-Ddocumentation=false'
+    '-Dlocation-services=enabled'
+    '-Dibus=true'
+    '-Dprivileged_group=wheel'
+    '-Dsnap=true'
+    '-Dtests=false'
+    '-Dx11=true'
+    '-Dprofile=default'
+    '-Dmalcontent=true'
+    '-Ddistributor_logo=/usr/share/pixmaps/aosc-os-gnome.svg'
+    '-Ddark_mode_distributor_logo=/usr/share/pixmaps/aosc-os-gnome-dark.svg'
+)
