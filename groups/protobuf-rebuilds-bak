@@ -4,7 +4,6 @@ app-admin/appstream
 desktop-wm/compiz
 app-admin/criu
 desktop-gnome/evolution
-desktop-gnome/gnome-contacts
 app-network/grpc
 desktop-kde/konqueror
 runtime-i18n/libphonenumber
