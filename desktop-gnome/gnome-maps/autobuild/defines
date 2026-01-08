@@ -1,5 +1,0 @@
-PKGNAME=gnome-maps
-PKGSEC=gnome
-PKGDEP="folks geocode-glib geoclue2 gfbgraph gjs libchamplain libhandy"
-BUILDDEP="appstream-glib gobject-introspection intltool"
-PKGDES="A simple map application for GNOME"

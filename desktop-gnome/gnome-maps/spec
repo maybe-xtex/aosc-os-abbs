@@ -1,4 +1,0 @@
-VER=42.3
-SRCS="https://download.gnome.org/sources/gnome-maps/${VER%.*}/gnome-maps-$VER.tar.xz"
-CHKSUMS="sha256::e456467facf3c8fd10c9386b5e74c43d9595ad9fb75257f7da014af983d69cd1"
-CHKUPDATE="anitya::id=9526"
