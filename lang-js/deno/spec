@@ -8,3 +8,4 @@ CHKSUMS="sha256::bfcec98ec40390c904dd7ac76d823cb5b1fab2fd806a3dd115d4a80cc35910e
 SUBDIR="deno"
 CHKUPDATE="anitya::id=133196"
 ENVREQ__ARM64="total_mem=30"
+REL="1"
