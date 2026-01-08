@@ -3,3 +3,4 @@ SRCS="pypi::version=${VER}::pyinotify-elephant-fork"
 CHKSUMS="sha256::a366b27e0d5be8cef60c836f89132c515500b5012ab6190d9c255c645df884ae"
 CHKUPDATE="anitya::id=379299"
 EPOCH=1
+REL="1"
