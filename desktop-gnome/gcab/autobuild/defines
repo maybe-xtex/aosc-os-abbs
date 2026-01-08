@@ -1,5 +1,15 @@
 PKGNAME=gcab
-PKGSEC=libs
+PKGSEC=utils
 PKGDEP="glib xz zlib"
-BUILDDEP="gobject-introspection gtk-doc intltool meson ninja vala"
-PKGDES="GObject Introspection interface description for gcab"
+BUILDDEP="gobject-introspection vala"
+PKGDES="Utility and GObject library to handle cabinet files"
+
+ABTYPE=meson
+MESON_AFTER=(
+    '-Ddocs=false'
+    '-Dintrospection=true'
+    '-Dnls=true'
+    '-Dvapi=true'
+    '-Dtests=false'
+    '-Dinstalled_tests=false'
+)

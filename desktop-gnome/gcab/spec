@@ -1,5 +1,4 @@
-VER=1.1
-REL=1
+VER=1.6
 SRCS="tbl::https://download.gnome.org/sources/gcab/$VER/gcab-$VER.tar.xz"
-CHKSUMS="sha256::192b2272c2adfde43595e5c62388854bca8a404bc796585b638e81774dd62950"
+CHKSUMS="sha256::2f0c9615577c4126909e251f9de0626c3ee7a152376c15b5544df10fc87e560b"
 CHKUPDATE="anitya::id=229508"
