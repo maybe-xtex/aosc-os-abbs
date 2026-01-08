@@ -1,14 +1,12 @@
 PKGNAME=gnome-session
 PKGSEC=gnome
-PKGDEP="dbus-glib dconf gsettings-desktop-schemas gnome-desktop \
-        hicolor-icon-theme json-glib mesa systemd"
-BUILDDEP="gtk-doc intltool x11-app xmlto"
+PKGDEP="gnome-desktop gtk-4 json-glib systemd"
+BUILDDEP="docbook-xsl"
 PKGDES="GNOME session data and handler"
 
-MESON_AFTER="-Dsession_selector=true \
-             -Dsystemd=true \
-             -Dsystemd_session=enable \
-             -Dsystemd_journal=true \
-             -Dconsolekit=false \
-             -Ddocbook=true \
-             -Dman=true"
+MESON_AFTER=(
+    '-Ddeprecation_flags=false'
+    '-Ddocbook=false'
+    '-Dman=true'
+    '-Dmimeapps=true'
+)
