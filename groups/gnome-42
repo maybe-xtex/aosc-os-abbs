@@ -159,7 +159,6 @@ desktop-gnome/cheese
 desktop-gnome/file-roller
 desktop-gnome/ghex
 runtime-vcs/libgit2-glib
-desktop-gnome/gitg
 desktop-gnome/glade
 desktop-gnome/gnome-chess
 desktop-gnome/gnome-recipes
