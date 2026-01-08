@@ -2,3 +2,4 @@ VER=6.0.0
 SRCS="git::commit=tags/${VER}::https://github.com/globocom/m3u8"
 CHKSUMS="SKIP"
 CHKUPDATE="anitya::id=37610"
+REL="1"
