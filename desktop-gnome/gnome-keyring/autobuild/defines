@@ -1,6 +1,6 @@
 PKGNAME=gnome-keyring
 PKGSEC=gnome
-PKGDEP="gcc-runtime gcr glib glibc libcap-ng libgcrypt systemd"
+PKGDEP="gcc-runtime gcr-3 glib glibc libcap-ng libgcrypt systemd"
 BUILDDEP="docbook-xsl"
 PKGDES="GNOME password management daemon"
 
