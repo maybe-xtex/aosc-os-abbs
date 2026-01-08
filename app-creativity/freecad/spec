@@ -3,3 +3,4 @@ REL=1
 SRCS="git::commit=tags/${VER};copy-repo=true::https://github.com/FreeCAD/FreeCAD.git"
 CHKSUMS="SKIP"
 CHKUPDATE="anitya::id=836"
+REL="1"
