@@ -1,4 +1,4 @@
-VER=42.3
+VER=49.0
 SRCS="https://download.gnome.org/sources/gnome-shell-extensions/${VER%.*}/gnome-shell-extensions-$VER.tar.xz"
-CHKSUMS="sha256::0ec2bea32e9f28ac805891f613194d48fc0c091f09c48313065a3884f72273fc"
+CHKSUMS="sha256::1570e064786cb4389759e0483f3a1bdbd5b9b38f06246eb4d1d509292a9c6a62"
 CHKUPDATE="anitya::id=1195"
