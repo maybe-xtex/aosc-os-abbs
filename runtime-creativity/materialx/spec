@@ -2,3 +2,4 @@ VER=1.39.4
 SRCS="git::commit=tags/v${VER}::https://github.com/AcademySoftwareFoundation/MaterialX"
 CHKSUMS="SKIP"
 CHKUPDATE="anitya::id=341513"
+REL="1"
