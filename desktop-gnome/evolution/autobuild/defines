@@ -1,12 +1,11 @@
 PKGNAME=evolution
 PKGSEC=gnome
-PKGDEP="gnome-desktop evolution-data-server libcanberra libpst \
-        libytnef psmisc desktop-file-utils hicolor-icon-theme dconf \
-        gtkspell3 bogofilter spamassassin gnome-autoar libcryptui protobuf \
-        webkit2gtk libchamplain gspell at-spi2-core gcr libgweather libical \
-        nspr nss highlight cmark"
-BUILDDEP="glade gobject-introspection intltool itstool vim"
-PKGDES="Manage your email, contacts, and schedule"
+PKGDEP="bogofilter cmark enchant-2 evolution-data-server gcr-3 gnome-autoar \
+        gnome-desktop gsettings-desktop-schemas gspell highlight libcanberra \
+        libchamplain libgweather libpst libsoup-3 libytnef nss nspr \
+        spamassassin sqlite webkit2gtk"
+BUILDDEP="intltool itstool"
+PKGDES="E-mail client for GNOME"
 
 CMAKE_AFTER=(
     '-DLIB_INSTALL_DIR=/usr/lib'
@@ -28,8 +27,7 @@ CMAKE_AFTER=(
     '-DENABLE_YTNEF=ON'
     '-DWITH_BOGOFILTER=ON'
     '-DWITH_ENCHANT_VERSION=2'
-    '-DWITH_GLADE_CATALOG=ON'
-    '-DWITH_GWEATHER4=ON'
+    '-DWITH_GLADE_CATALOG=OFF'
     '-DWITH_HELP=ON'
     '-DWITH_OPENLDAP=ON'
     '-DWITH_SA_LEARN=ON'

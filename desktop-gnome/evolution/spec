@@ -1,5 +1,4 @@
-VER=3.44.4
-REL=7
+VER=3.58.3
 SRCS="https://download.gnome.org/sources/evolution/${VER:0:4}/evolution-$VER.tar.xz"
-CHKSUMS="sha256::f0b16e7abad3c7945a29c322f17dab4a08d61e99bd7cc91b8df35053c5c12e8c"
+CHKSUMS="sha256::5d01b79a5bebdf2d3a9871b61350939cf2501f6ea03c241543f744a9286d4d79"
 CHKUPDATE="anitya::id=10934"
