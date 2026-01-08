@@ -2,3 +2,4 @@ VER=2025.2
 SRCS="tbl::https://pypi.io/packages/source/p/pytz/pytz-$VER.tar.gz"
 CHKSUMS="sha256::360b9e3dbb49a209c21ad61809c7fb453643e048b38924c765813546746e81c3"
 CHKUPDATE="anitya::id=6537"
+REL="1"
