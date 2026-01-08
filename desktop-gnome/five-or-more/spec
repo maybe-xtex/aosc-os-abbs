@@ -1,4 +1,0 @@
-VER=3.32.3
-SRCS="tbl::https://download.gnome.org/sources/five-or-more/${VER:0:4}/five-or-more-$VER.tar.xz"
-CHKSUMS="sha256::2d10d72eefdeb324b447d632af0c32496e25fc15a3c01db7d2f00c9b51d09ef4"
-CHKUPDATE="anitya::id=227731"
