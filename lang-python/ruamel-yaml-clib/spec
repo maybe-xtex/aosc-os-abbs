@@ -2,3 +2,4 @@ VER=0.2.14
 SRCS="pypi::version=$VER::ruamel.yaml.clib"
 CHKSUMS="sha256::803f5044b13602d58ea378576dd75aa759f52116a0232608e8fdada4da33752e"
 CHKUPDATE="anitya::id=131030"
+REL="1"
