@@ -2,3 +2,4 @@ VER=25.07
 SRCS="tbl::http://fast.dpdk.org/rel/dpdk-${VER}.tar.xz"
 CHKSUMS="sha256::6886cbedc350bb8cbef347d10367d6259e36435627fbb27d578adbdc0d3b410d"
 CHKUPDATE="anitya::id=459"
+REL="1"
