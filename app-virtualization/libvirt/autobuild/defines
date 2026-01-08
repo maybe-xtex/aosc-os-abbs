@@ -11,6 +11,7 @@ BUILDDEP="docutils qemu rpcsvc-proto firewalld wireshark"
 PKGRECOM="qemu"
 PKGDES="API for controlling virtualization engines"
 
+ABTYPE=meson
 # FIXME: -Dglusterfs=disabled, we haven't packaged GlusterFS yet.
 # FIXME: -Dstorage_gluster=disabled, we haven't packaged GlusterFS yet.
 # FIXME: -Dopenwsman=disabled, we haven't packaged Openwsman yet.
