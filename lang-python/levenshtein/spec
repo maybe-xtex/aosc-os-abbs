@@ -2,3 +2,4 @@ VER=0.27.1
 SRCS="pypi::version=$VER::Levenshtein"
 CHKSUMS="sha256::3e18b73564cfc846eec94dd13fab6cb006b5d2e0cc56bad1fd7d5585881302e3"
 CHKUPDATE="anitya::id=3910"
+REL="1"
