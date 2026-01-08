@@ -2,3 +2,4 @@ VER=0.28
 SRCS="pypi::version=$VER::pyxdg"
 CHKSUMS="sha256::3267bb3074e934df202af2ee0868575484108581e6f3cb006af1da35395e88b4"
 CHKUPDATE="anitya::id=4121"
+REL="1"
