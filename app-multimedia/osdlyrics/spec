@@ -1,6 +1,6 @@
 EPOCH=1
 VER=0.5.15
-REL=2
+REL=3
 SRCS="git::commit=tags/$VER::https://github.com/osdlyrics/osdlyrics"
 CHKSUMS="SKIP"
 CHKUPDATE="anitya::id=230945"
