@@ -1,5 +1,0 @@
-VER=0.4.21
-REL="6"
-SRCS="git::commit=tags/0.4.21::https://gitlab.gnome.org/Archive/caribou.git"
-CHKSUMS="SKIP"
-CHKUPDATE="anitya::id=253"
