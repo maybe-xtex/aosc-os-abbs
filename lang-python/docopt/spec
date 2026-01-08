@@ -1,5 +1,5 @@
 VER=0.6.2
-REL=5
+REL="6"
 SRCS="pypi::version=$VER::docopt"
 CHKSUMS="sha256::49b3a825280bd66b3aa83585ef59c4a8c82f2c8a522dbe754a8bc8d08c85c491"
 CHKUPDATE="anitya::id=19769"
