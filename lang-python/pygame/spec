@@ -2,3 +2,4 @@ VER=2.6.1
 SRCS="pypi::version=$VER::pygame"
 CHKSUMS="sha256::56fb02ead529cee00d415c3e007f75e0780c655909aaa8e8bf616ee09c9feb1f"
 CHKUPDATE="anitya::id=17480"
+REL="1"
