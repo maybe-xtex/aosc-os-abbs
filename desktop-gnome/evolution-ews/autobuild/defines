@@ -1,10 +1,12 @@
 PKGNAME=evolution-ews
 PKGSEC=gnome
-PKGDEP="evolution-data-server evolution libmspack libsoup"
-BUILDDEP="gtk-doc gobject-introspection intltool itstool vim cmake"
-PKGDES="Microsoft Exchange Web Services for Evolution"
+PKGDEP="evolution-data-server evolution libmspack"
+BUILDDEP="intltool"
+PKGDES="Microsoft Exchange Web Services integration for Evolution"
 
-CMAKE_AFTER="-DLIB_INSTALL_DIR=/usr/lib \
-             -DENABLE_MAINTAINER_MODE=OFF \
-             -DENABLE_SCHEMAS_COMPILE=OFF \
-             -DWITH_MSPACK=ON"
+CMAKE_AFTER=(
+    '-DLIB_INSTALL_DIR=/usr/lib'
+    '-DENABLE_MAINTAINER_MODE=OFF'
+    '-DENABLE_SCHEMAS_COMPILE=OFF'
+    '-DWITH_MSPACK=ON'
+)
