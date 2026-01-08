@@ -45,7 +45,6 @@ desktop-gnome/cantarell-fonts
 desktop-gnome/libpeas
 runtime-desktop/libportal
 desktop-gnome/eog
-desktop-gnome/eog-plugins
 desktop-gnome/gcr
 runtime-common/json-glib
 runtime-web/libsoup
