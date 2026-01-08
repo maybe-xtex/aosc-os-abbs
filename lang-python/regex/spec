@@ -2,3 +2,4 @@ VER=2025.11.3
 SRCS="tbl::https://pypi.io/packages/source/r/regex/regex-$VER.tar.gz"
 CHKSUMS="sha256::1fedc720f9bb2494ce31a58a1631f9c82df6a09b49c19517ea5cc280b4541e01"
 CHKUPDATE="anitya::id=5548"
+REL="1"
