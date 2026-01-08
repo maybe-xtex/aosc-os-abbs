@@ -1,4 +1,0 @@
-VER=42.9
-SRCS="tbl::https://gitlab.gnome.org/World/deja-dup/-/archive/$VER/deja-dup-$VER.tar.gz"
-CHKSUMS="sha256::bc1db2b7949b3e313bb952255e4e93a764371c9d0920cfa3d59172036dfcdb70"
-CHKUPDATE="anitya::id=416"
