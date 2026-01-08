@@ -1,19 +1,20 @@
 PKGNAME=gnome-shell
 PKGSEC=gnome
-PKGDEP="accountsservice gcr gjs gnome-bluetooth gnome-menus upower \
-        gnome-session gnome-settings-daemon gsettings-desktop-schemas \
-        libcanberra libcroco libsecret mutter network-manager-applet \
-        telepathy-logger telepathy-mission-control unzip gstreamer-1-0 \
-        evolution-data-server python-3 gnome-autoar gnome-control-center \
-        gtk-4 xdg-desktop-portal-gnome gtk-update-icon-cache"
-BUILDDEP="appstream-glib gobject-introspection gtk-doc intltool \
-          sassc asciidoc"
-PKGDES="The default GNOME desktop interface"
+PKGDEP="evolution-data-server gcr-4 gjs gnome-autoar gnome-control-center \
+        gnome-desktop gsettings-desktop-schemas libsecret mutter \
+        networkmanager pipewire systemd"
+BUILDDEP="docutils gobject-introspection"
+PKGDES="Default desktop interface for GNOME"
 
-MESON_AFTER="-Dextensions_tool=true \
-             -Dextensions_app=true \
-             -Dgtk_doc=true \
-             -Dman=true \
-             -Dnetworkmanager=true \
-             -Dsystemd=true \
-             -Dsoup2=true"
+ABTYPE=meson
+MESON_AFTER=(
+    '-Dcamera_monitor=true'
+    '-Dextensions_tool=true'
+    '-Dextensions_app=true'
+    '-Dgtk_doc=false'
+    '-Dman=true'
+    '-Dtests=false'
+    '-Dnetworkmanager=true'
+    '-Dportal_helper=true'
+    '-Dsystemd=true'
+)
