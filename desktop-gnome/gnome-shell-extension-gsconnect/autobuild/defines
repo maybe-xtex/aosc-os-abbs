@@ -1,6 +1,15 @@
 PKGNAME=gnome-shell-extension-gsconnect
 PKGSEC=gnome
-PKGDEP="folks gnome-shell gsound libgdata nautilus-python sshfs unzip"
-PKGDES="KDE Connect implementation with GNOME Shell integration"
+PKGDEP="gnome-shell"
+PKGDES="KDE Connect integration for GNOME Shell"
+
+ABTYPE=meson
+MESON_AFTER=(
+    '-Dfirewalld=true'
+    '-Dnautilus=true'
+    '-Dnemo=true'
+    '-Dwebextension=true'
+    '-Dinstalled_tests=false'
+)
 
 ABHOST=noarch
