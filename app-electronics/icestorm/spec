@@ -2,3 +2,4 @@ VER=0+git20250401
 SRCS="git::commit=3cdcf4b009bb8681ab7e2e09d65043f04334b60e::https://github.com/cliffordwolf/icestorm"
 CHKSUMS="SKIP"
 CHKUPDATE="github::repo=cliffordwolf/icestorm"
+REL="1"
