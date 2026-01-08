@@ -7,7 +7,6 @@ app-doc/texlive
 desktop-mate/atril
 desktop-kde/cantor
 runtime-doc/cups-filters
-desktop-gnome/evince
 runtime-gis/gdal
 app-creativity/gimp
 app-creativity/inkscape
