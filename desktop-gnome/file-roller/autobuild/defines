@@ -1,12 +1,17 @@
 PKGNAME=file-roller
 PKGSEC=gnome
-PKGDEP="desktop-file-utils gtk-3 hicolor-icon-theme dconf libarchive file \
-        json-glib libnotify p7zip lrzip libhandy"
-BUILDDEP="intltool itstool nautilus"
+PKGDEP="gtk-4 libadwaita libarchive libportal"
+BUILDDEP="gobject-introspection itstool nautilus"
 PKGDES="Archive manager for GNOME"
 
-MESON_AFTER="-Drun-in-place=false \
-             -Dnautilus-actions=enabled \
-             -Dnotification=enabled \
-             -Dpackagekit=true \
-             -Dlibarchive=enabled"
+MESON_AFTER=(
+    '-Dwarn-deprecated=false'
+    '-Drun-in-place=false'
+    '-Dnautilus-actions=enabled'
+    '-Dnotification=enabled'
+    '-Duse_native_appchooser=true'
+    '-Dpackagekit=false'
+    '-Dlibarchive=enabled'
+    '-Dintrospection=enabled'
+    '-Dapi_docs=disabled'
+)
