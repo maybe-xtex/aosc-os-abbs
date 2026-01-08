@@ -2,3 +2,4 @@ VER=2.2.0
 SRCS="tbl::https://pypi.io/packages/source/f/flent/flent-$VER.tar.gz"
 CHKSUMS="sha256::04fc21de858863560423e79c822f405225f829afd8e5d62293099fbef341f9e8"
 CHKUPDATE="anitya::id=48812"
+REL="1"
