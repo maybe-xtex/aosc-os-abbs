@@ -2,3 +2,4 @@ VER=2.0.0
 SRCS="pypi::version=$VER::sphinxcontrib-applehelp"
 CHKSUMS="sha256::2f29ef331735ce958efa4734873f084941970894c6090408b079c61b2e1c06d1"
 CHKUPDATE="anitya::id=19630"
+REL="1"
