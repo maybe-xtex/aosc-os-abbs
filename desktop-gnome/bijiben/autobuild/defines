@@ -1,7 +1,0 @@
-PKGNAME=bijiben
-PKGSEC=gnome
-PKGDEP="desktop-file-utils evolution-data-server gdk-pixbuf \
-        gnome-online-accounts libhandy libical pango tracker \
-        webkit2gtk zeitgeist"
-BUILDDEP="evolution intltool itstool meson ninja"
-PKGDES="A note taking application for GNOME"
