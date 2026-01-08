@@ -74,7 +74,6 @@ runtime-desktop/ayatana-indicator-messages
 desktop-gnome/gnome-keyring
 runtime-editors/gtksourceview-4
 runtime-editors/tepl
-runtime-editors/tepl-5
 runtime-display/xorg-server
 desktop-gnome/yelp
 desktop-gnome/gedit
