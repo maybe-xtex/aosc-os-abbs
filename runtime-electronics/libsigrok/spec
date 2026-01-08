@@ -2,3 +2,4 @@ VER=0.5.2+git20241021
 SRCS="git::commit=f06f788118191d19fdbbb37046d3bd5cec91adb1::https://github.com/sigrokproject/libsigrok.git"
 CHKSUMS="SKIP"
 CHKUPDATE="anitya::id=21369"
+REL="1"
