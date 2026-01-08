@@ -2,3 +2,4 @@ VER=9.2.1
 SRCS="pypi::version=$VER::setuptools_scm"
 CHKSUMS="sha256::2f5b21e45205e47ed3976e58bc29c38f49bb9b6f07c625c7fd2823871694b244"
 CHKUPDATE="anitya::id=65053"
+REL="1"
