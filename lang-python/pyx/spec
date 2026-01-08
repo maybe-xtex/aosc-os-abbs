@@ -2,3 +2,4 @@ VER=0.16
 SRCS="tbl::https://pypi.python.org/packages/source/P/PyX/PyX-$VER.tar.gz"
 CHKSUMS="sha256::4d8e3e471cd3e9a9bd13d5086cdf7c0af1b0c3f3e195e74f5f63318dc40a66d8"
 CHKUPDATE="anitya::id=7028"
+REL="1"
