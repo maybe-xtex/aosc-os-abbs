@@ -2,3 +2,4 @@ VER=0.7.5+git20250702
 SRCS="git::commit=5d682733e482950f686663c129adc4b751c8d790::https://github.com/teeworlds/teeworlds"
 CHKSUMS="SKIP"
 CHKUPDATE="anitya::id=5340"
+REL="1"
