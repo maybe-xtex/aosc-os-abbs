@@ -2,3 +2,4 @@ VER=3.2.3
 SRCS="pypi::version=$VER::cython"
 CHKSUMS="sha256::f13832412d633376ffc08d751cc18ed0d7d00a398a4065e2871db505258748a6"
 CHKUPDATE="anitya::id=36699"
+REL="1"
