@@ -1,5 +1,4 @@
-VER=42.2
-REL=1
+VER=49.1
 SRCS="https://download.gnome.org/sources/gnome-calendar/${VER%.*}/gnome-calendar-$VER.tar.xz"
-CHKSUMS="sha256::ae7cc63aae96a02aa599b6d6a348585f4e76f729536f39efb744302b05b5fbbd"
+CHKSUMS="sha256::0c1115ab294d532c4c19f56ce0d7aee53f8ea32b1430209dd1d9eda47a83d2c2"
 CHKUPDATE="anitya::id=10906"
