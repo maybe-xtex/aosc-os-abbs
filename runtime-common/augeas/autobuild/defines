@@ -1,5 +1,5 @@
 PKGNAME=augeas
-PKGDES="Augeas configuration editing library and API"
+PKGDES="Utilities and library to edit configuration files"
 PKGSEC=libs
 PKGDEP="libxml2"
 
