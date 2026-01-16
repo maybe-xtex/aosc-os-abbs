@@ -1,8 +1,8 @@
 PKGNAME=gtksourceview-3
 PKGSEC=gnome
 PKGDEP="gtk-3 libxml2"
-BUILDDEP="gobject-introspection gtk-doc intltool vala"
-PKGDES="A text widget adding syntax highlighting and more to GNOME (version 3)"
+BUILDDEP="gobject-introspection intltool vala"
+PKGDES="Text widget adding syntax highlighting and more to GNOME (version 3)"
 
 AUTOTOOLS_AFTER=(
 	"--disable-glade-catalog"
