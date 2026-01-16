@@ -4,6 +4,7 @@ PKGDEP="iso-codes json-glib gcr-4 gtk-4 libarchive libadwaita libportal libsecre
 BUILDDEP="blueprint-compiler docutils itstool"
 PKGDES="Web browser based on the WebKit rendering engine"
 
+ABTYPE=meson
 MESON_AFTER=(
     '-Ddeveloper_mode=false'
     '-Dtech_preview=false'
