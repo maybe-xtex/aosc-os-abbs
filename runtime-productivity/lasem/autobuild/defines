@@ -1,11 +1,11 @@
 PKGNAME=lasem
 PKGSEC=libs
 PKGDEP="gdk-pixbuf pango"
-BUILDDEP="intltool gtk-doc"
+BUILDDEP="intltool"
 PKGDES="SVG and MathML rendering library"
 
-AUTOTOOLS_AFTER="--enable-gtk-doc"
-
-PKGEPOCH=1
+AUTOTOOLS_AFTER=(
+    "--enable-gtk-doc"
+)
 
 PKGBREAK="goffice<=0.10.43-1"
