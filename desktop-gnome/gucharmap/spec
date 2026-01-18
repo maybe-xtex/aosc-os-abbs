@@ -1,4 +1,4 @@
-VER=15.1.5
+VER=17.0.1
 SRCS="git::commit=tags/$VER::https://gitlab.gnome.org/GNOME/gucharmap"
 CHKSUMS="SKIP"
 CHKUPDATE="anitya::id=1276"

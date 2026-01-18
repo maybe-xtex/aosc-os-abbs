@@ -1,14 +1,15 @@
 PKGNAME=gucharmap
 PKGSEC=gnome
-PKGDEP="dconf gtk-3 hicolor-icon-theme unicode-ucd"
-BUILDDEP="appstream-glib docbook-xsl gobject-introspection gtk-doc \
-          intltool itstool wget desktop-file-utils vala"
+PKGDEP="gtk-3 unicode-ucd"
+BUILDDEP="docbook-xsl gobject-introspection vala"
 PKGDES="GNOME Unicode character map"
 
-MESON_AFTER="-Dcharmap=true \
-             -Ddbg=false \
-             -Ddocs=true \
-             -Dgir=true \
-             -Dgtk3=true \
-             -Ducd_path=/usr/share/unicode/ucd \
-             -Dvapi=true"
+MESON_AFTER=(
+    '-Dcharmap=true'
+    '-Ddbg=false'
+    '-Ddocs=true'
+    '-Dgir=true'
+    '-Dgtk3=true'
+    '-Ducd_path=/usr/share/unicode/ucd'
+    '-Dvapi=true'
+)
