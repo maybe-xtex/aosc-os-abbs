@@ -1,8 +1,11 @@
 PKGNAME=gnome-characters
 PKGSEC=gnome
-PKGDEP="gtk-4 gjs libadwaita libhandy libunistring"
-BUILDDEP="appstream-glib gobject-introspection intltool"
-PKGDES="Simple utility application to find and insert unusual characters"
+PKGDEP="gtk-4 gjs libadwaita"
+BUILDDEP="gobject-introspection"
+PKGDES="Utility to find and insert unusual characters"
 
-MESON_AFTER="-Dpangoft2=true \
-             -Dinstalled_tests=false"
+MESON_AFTER=(
+    '-Dpangoft2=true'
+    '-Dinstalled_tests=false'
+    '-Dprofile=default'
+)

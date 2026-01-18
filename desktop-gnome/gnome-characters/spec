@@ -1,4 +1,4 @@
-VER=42.0
+VER=49.1
 SRCS="https://download.gnome.org/sources/gnome-characters/${VER%.*}/gnome-characters-$VER.tar.xz"
-CHKSUMS="sha256::5da0ffb816f8a6b44f303744ca827a34080118c1c938d8d79af17b7fe67980f8"
+CHKSUMS="sha256::795c0fe434e602dc783391fb5830dbc7d8e1ea05ca77210fb140e2f6f40a145c"
 CHKUPDATE="anitya::id=10889"
