@@ -73,7 +73,6 @@ desktop-gnome/yelp
 desktop-gnome/gjs
 runtime-common/glib-networking
 runtime-common/glib-static
-desktop-gnome/gnome-panel
 desktop-gnome/gnome-settings-daemon
 desktop-gnome/gnome-backgrounds
 desktop-gnome/gnome-bluetooth

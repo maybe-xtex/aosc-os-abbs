@@ -88,7 +88,6 @@ desktop-gnome/sysprof
 desktop-gnome/gtk-4
 desktop-gnome/gjs
 runtime-desktop/libwnck-3
-desktop-gnome/gnome-panel
 app-admin/upower
 runtime-display/x11-lib
 desktop-gnome/gnome-settings-daemon
