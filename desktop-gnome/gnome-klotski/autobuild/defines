@@ -1,5 +1,0 @@
-PKGNAME=gnome-klotski
-PKGSEC=gnome
-PKGDEP="gtk-3 libgnome-games-support librsvg desktop-file-utils"
-BUILDDEP="gobject-introspection intltool itstool vala appstream-glib"
-PKGDES="Slide blocks to solve the puzzle"
