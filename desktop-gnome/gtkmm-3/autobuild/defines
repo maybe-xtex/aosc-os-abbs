@@ -1,12 +1,13 @@
 PKGNAME=gtkmm-3
 PKGSEC=gnome
 PKGDEP="gtk-3 pangomm atkmm"
-BUILDDEP="doxygen graphviz libxslt mm-common"
 PKGDES="C++ bindings for GTK+3"
 
 ABTYPE=meson
-MESON_AFTER="-Dbuild-deprecated-api=true \
-             -Dbuild-atkmm-api=true \
-             -Dbuild-x11-api=true \
-             -Dbuild-documentation=true \
-             -Dbuild-demos=true"
+MESON_AFTER=(
+    '-Dbuild-deprecated-api=true'
+    '-Dbuild-atkmm-api=true'
+    '-Dbuild-x11-api=true'
+    '-Dbuild-documentation=false'
+    '-Dbuild-demos=false'
+)
