@@ -1,5 +1,0 @@
-PKGNAME=gnome-sudoku
-PKGSEC=gnome
-PKGDEP="desktop-file-utils dconf gtk-3 json-glib libgee qqwing"
-BUILDDEP="appstream-glib intltool itstool vala"
-PKGDES="A Sudoku game for GNOME"
