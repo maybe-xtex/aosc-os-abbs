@@ -1,5 +1,8 @@
 PKGNAME=gnome-font-viewer
 PKGSEC=gnome
-PKGDEP="desktop-file-utils gnome-desktop gtk-4 libadwaita"
-BUILDDEP="intltool itstool"
-PKGDES="A font viewer and thumbnailer for GNOME"
+PKGDEP="gtk-4 libadwaita"
+PKGDES="Font viewer and thumbnailer for GNOME"
+
+MESON_AFTER=(
+    '-Dprofile=default'
+)
