@@ -1,14 +1,14 @@
-VER=15.1.0
-SRCS="file::rename=UCD.zip::http://www.unicode.org/Public/zipped/$VER/UCD.zip \
-      file::rename=Unihan.zip::http://www.unicode.org/Public/zipped/$VER/Unihan.zip \
-      file::rename=ReadMe.txt::http://www.unicode.org/Public/emoji/${VER%.*}/ReadMe.txt \
-      file::rename=emoji-sequences.txt::http://www.unicode.org/Public/emoji/${VER%.*}/emoji-sequences.txt \
-      file::rename=emoji-tests.txt::http://www.unicode.org/Public/emoji/${VER%.*}/emoji-test.txt \
-      file::rename=emoji-zwj-sequences.txt::http://www.unicode.org/Public/emoji/${VER%.*}/emoji-zwj-sequences.txt"
-CHKSUMS="sha256::cb1c663d053926500cd501229736045752713a066bd75802098598b7a7056177 \
-         sha256::a0226610e324bcf784ac380e11f4cbf533ee1e6b3d028b0991bf8c0dc3f85853 \
-         sha256::deae8f60470d2f4e3204b22979526a57ad1a9780fcaf3cb1344b505cd8a5013a \
-         sha256::eb72c9115e3504fbbe1c8621b619f879471a46ccc56e2f445417b7c1cad050d1 \
-         sha256::d876ee249aa28eaa76cfa6dfaa702847a8d13b062aa488d465d0395ee8137ed9 \
-         sha256::9a76a03dcacfcd8f9bfe08c49c8d90b55182b977cbcc87a694e8a8193efb0e57"
+VER=17.0.0
+SRCS="file::rename=UCD.zip::https://www.unicode.org/Public/$VER/ucd/UCD.zip \
+      file::rename=Unihan.zip::https://www.unicode.org/Public/$VER/ucd/Unihan.zip \
+      file::rename=ReadMe.txt::https://www.unicode.org/Public/$VER/ucd/ReadMe.txt \
+      file::rename=emoji-sequences.txt::https://www.unicode.org/Public/$VER/emoji/emoji-sequences.txt \
+      file::rename=emoji-tests.txt::https://www.unicode.org/Public/$VER/emoji/emoji-test.txt \
+      file::rename=emoji-zwj-sequences.txt::https://www.unicode.org/Public/$VER/emoji/emoji-zwj-sequences.txt"
+CHKSUMS="sha256::2066d1909b2ea93916ce092da1c0ee4808ea3ef8407c94b4f14f5b7eb263d28e \
+         sha256::f7a48b2b545acfaa77b2d607ae28747404ce02baefee16396c5d2d7a8ef34b5e \
+         sha256::9fe1a90bd32659d7953616283dc2bffaa165518aae9ace026040c42c559ba606 \
+         sha256::12cc8267dc33cbd11ed32bcf6fc5dc2ad9c7a77bae1bdfba2f41b1b9b3ead8dd \
+         sha256::1d8a944f88d7952f7ef7c5167fef3c67995bcae24543949710231b03a201acda \
+         sha256::5b25441daed2322b068c5e70cda522946a4f0274df864445a1965a92e5fc5cad"
 CHKUPDATE="anitya::id=5045"
