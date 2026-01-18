@@ -1,4 +1,0 @@
-VER=46.1
-SRCS="https://download.gnome.org/sources/gnome-usage/${VER%.*}/gnome-usage-$VER.tar.xz"
-CHKSUMS="sha256::7bda088e4bf6f582bb3c0245dd4ed59cb8064ac56cf2be4682196beccad880e3"
-CHKUPDATE="anitya::id=228561"
