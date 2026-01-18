@@ -5,8 +5,11 @@ PKGDEP="geany gpgme gtkspell hspell libgit2 lua vte webkit2gtk \
 BUILDDEP="cppcheck gdb intltool vala"
 PKGDES="Plugins for Geany"
 
+ABTYPE=autotools
 # FIXME: Geanypy incompatible with GTK+ 3.
-AUTOTOOLS_AFTER="--libexecdir=/usr/lib \
-                 --disable-markdown \
-                 --disable-webhelper"
+AUTOTOOLS_AFTER=(
+        "--libexecdir=/usr/lib"
+        "--disable-markdown"
+        "--disable-webhelper"
+)
 ABSHADOW=0
