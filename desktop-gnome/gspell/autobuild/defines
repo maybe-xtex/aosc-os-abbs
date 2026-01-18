@@ -1,8 +1,17 @@
 PKGNAME=gspell
 PKGSEC=gnome
-PKGDEP="enchant-2 gtksourceview-3 iso-codes"
-BUILDDEP="intltool itstool gtk-doc vim vala gobject-introspection"
-PKGDES="A flexible API to implement the spell checking in a GTK+ application"
+PKGDEP="enchant-2 icu"
+BUILDDEP="gobject-introspection vala"
+PKGDES="Library to implement the spell checking in GTK applications"
 
-AUTOTOOLS_AFTER="--enable-gtk-doc"
+ABTYPE=meson
+MESON_AFTER=(
+    '-Dgspell_app=true'
+    '-Dgobject_introspection=true'
+    '-Dvapi=true'
+    '-Dgtk_doc=false'
+    '-Dtests=false'
+    '-Dinstall_tests=false'
+)
+
 PKGBREAK="latexila<=3.18.2"
