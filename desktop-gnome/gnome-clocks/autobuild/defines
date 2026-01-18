@@ -1,7 +1,10 @@
 PKGNAME=gnome-clocks
 PKGSEC=gnome
-PKGDEP="gtk-4 libcanberra libgweather gnome-desktop hicolor-icon-theme \
-        geoclue2 geocode-glib gsound libhandy desktop-file-utils libadwaita \
-        gtk-update-icon-cache"
-BUILDDEP="appstream-glib gobject-introspection intltool itstool vala"
+PKGDEP="geoclue2 gnome-desktop gtk-4 libadwaita libgweather"
+BUILDDEP="gobject-introspection itstool vala"
 PKGDES="Clocks application for GNOME"
+
+MESON_AFTER=(
+    '-Dprofile=default'
+    '-Ddocs=false'
+)

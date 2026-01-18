@@ -1,5 +1,4 @@
-VER=42.0
-REL=1
+VER=49.0
 SRCS="https://download.gnome.org/sources/gnome-clocks/${VER%.*}/gnome-clocks-$VER.tar.xz"
-CHKSUMS="sha256::0e7118db4a032e3cea3212d98cbb828d6b7cf22fe05e0c5fc8b391c6a3dd6fe0"
+CHKSUMS="sha256::bf76915f2a492e8a0592fe40b35346593aa39e4e6881d6176e0efd8771d4e6fa"
 CHKUPDATE="anitya::id=10905"
