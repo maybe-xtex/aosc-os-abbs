@@ -1,8 +1,0 @@
-PKGNAME=gnome-video-effects
-PKGSEC=gnome
-PKGDEP=""
-BUILDDEP="gnome-common intltool"
-PKGDES="A collection of GStreamer effects"
-
-ABSHADOW=0
-ABHOST=noarch
