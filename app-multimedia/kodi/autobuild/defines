@@ -10,7 +10,7 @@ PKGDEP="afpfs-ng bluez dcadec fribidi glew hicolor-icon-theme \
         giflib libpng"
 BUILDDEP="boost cmake curl doxygen gperf jasper openjdk swig zip"
 BUILDDEP__AMD64="${BUILDDEP} nasm yasm"
-PKGDES="A media center application for home theatres"
+PKGDES="Media center application for home theatres"
 
 # FIXME: cmakeninja ABTYPE breaks internal crossguid build.
 ABTYPE=cmake
