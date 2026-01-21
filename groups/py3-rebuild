@@ -1053,10 +1053,6 @@ ladish
 mlt
 opentimelineio
 ldns
-at-spi2-core+32
-gnutls+32
-libglvnd+32
-spirv-tools+32
 libpst
 libmsym
 vigra
