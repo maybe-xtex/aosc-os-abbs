@@ -2,6 +2,6 @@ PKGNAME=libabw
 PKGSEC=libs
 PKGDEP="librevenge libxml2"
 BUILDDEP="boost gperf"
-PKGDES="A library that parses the file format of AbiWord documents"
+PKGDES="Library that parses the file format of AbiWord documents"
 
 ABSHADOW=no
