@@ -1,4 +1,0 @@
-VER=1.8.2
-SRCS="https://download.gnome.org/sources/libgnome-games-support/${VER:0:3}/libgnome-games-support-$VER.tar.xz"
-CHKSUMS="sha256::28434604a7b038731ac0231731388ff104f565bb2330cc24e78cda04cfd3ef7d"
-CHKUPDATE="anitya::id=228576"
