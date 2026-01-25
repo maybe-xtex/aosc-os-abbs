@@ -5,17 +5,18 @@ PKGDEP="gobject-introspection gtk-3 lgi luajit"
 PKGDEP__NOLUAJIT="${PKGDEP/luajit/lua}"
 PKGDEP__PPC64EL="${PKGDEP__NOLUAJIT}"
 PKGDEP__RISCV64="${PKGDEP__NOLUAJIT}"
-BUILDDEP="glade gi-docgen gobject-introspection gtk-doc intltool \
-          vala"
-PKGDES="A GObject-based plugins engine"
+BUILDDEP="gobject-introspection intltool"
+PKGDES="GObject-based plugins engine"
 
-# FIXME: python3 support is broken with pygobject 3.54+
-MESON_AFTER="-Dlua51=true \
-             -Dpython2=false \
-             -Dpython3=false \
-             -Dintrospection=true \
-             -Dvapi=true \
-             -Dwidgetry=true \
-             -Dglade_catalog=true \
-             -Ddemos=true \
-             -Dgtk_doc=true"
+# FIXME: Python 3 support is broken with pygobject 3.54+
+MESON_AFTER=(
+    '-Dlua51=true'
+    '-Dpython2=false'
+    '-Dpython3=false'
+    '-Dintrospection=true'
+    '-Dvapi=true'
+    '-Dwidgetry=true'
+    '-Dglade_catalog=false'
+    '-Ddemos=false'
+    '-Dgtk_doc=false'
+)
