@@ -1,0 +1,20 @@
+PKGNAME=dleyna
+PKGSEC=gnome
+PKGDEP="glib gssdp gupnp-av gupnp-dlna libsoup-3 libxml2"
+BUILDDEP="docutils"
+PKGDES="Services and D-Bus APIs to access UPnP and DLNA media devices in a network"
+
+ABTYPE=meson
+MESON_AFTER=(
+    '-Denable_debug=false'
+    '-Dnever_quit=false'
+    '-Dconnector=dbus'
+    '-Dlog_type=syslog'
+    '-Dbuild_server=true'
+    '-Dman_pages=true'
+    '-Ddocs=false'
+)
+
+# Note: Merged since 0.7.0.
+PKGBREAK="dleyna-server dleyna-renderer dleyna-connector-dbus dleyna-core"
+PKGREP="dleyna-server dleyna-renderer dleyna-connector-dbus dleyna-core"
