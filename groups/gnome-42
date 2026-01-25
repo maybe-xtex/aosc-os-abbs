@@ -131,7 +131,6 @@ desktop-gnome/meld
 desktop-gnome/seahorse
 desktop-gnome/simple-scan
 desktop-gnome/swell-foop
-desktop-gnome/tali
 runtime-common/glib-networking
 runtime-common/glib-static
 desktop-cinnamon/cinnamon

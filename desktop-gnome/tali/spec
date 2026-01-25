@@ -1,4 +1,0 @@
-VER=40.8
-SRCS="https://download.gnome.org/sources/tali/${VER%.*}/tali-$VER.tar.xz"
-CHKSUMS="sha256::6c178c160fcbb4d11be3d1569d538e0e78140d50bbdb52a7583188f795c017ee"
-CHKUPDATE="anitya::id=228589"
