@@ -14,10 +14,13 @@ BUILDDEP__PPC64="${BUILDDEP__RETRO}"
 PKGDES="GObject collection library"
 
 # FIXME: Valadoc is broken with libgee 0.20.x.
-AUTOTOOLS_AFTER="--disable-doc \
-                 --enable-introspection \
-                 --enable-vala"
-AUTOTOOLS_AFTER__RETRO=" \
-                 ${AUTOTOOLS_AFTER} \
-                 --disable-introspection \
-                 --disable-vala"
+AUTOTOOLS_AFTER=(
+    '--disable-doc'
+    '--enable-introspection'
+    '--enable-vala'
+)
+AUTOTOOLS_AFTER__RETRO=(
+    "${AUTOTOOLS_AFTER[@]}"
+    '--disable-introspection'
+    '--disable-vala'
+)
