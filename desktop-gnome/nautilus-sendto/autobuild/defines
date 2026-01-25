@@ -1,7 +1,0 @@
-PKGNAME=nautilus-sendto
-PKGSEC=gnome
-PKGDEP="nautilus"
-PKGDES="Naultilus context menu for sending files (transitional)"
-
-ABHOST=noarch
-PKGEPOCH=1
