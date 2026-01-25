@@ -2,8 +2,9 @@ PKGNAME=meld
 PKGSEC=gnome
 PKGDEP="gsettings-desktop-schemas gtksourceview-4 pycairo \
         pygobject-3 dbus-python"
-BUILDDEP="appstream-glib gtk-4 intltool itstool"
-PKGDES="A visual diff and merge tool targeted at developers"
+BUILDDEP="desktop-file-utils gtk-update-icon-cache itstool"
+PKGDES="Visual diff and merge tool"
 
-NOPYTHON2=1
 ABHOST=noarch
+
+ABTYPE=meson
