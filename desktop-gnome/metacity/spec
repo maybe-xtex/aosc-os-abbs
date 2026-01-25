@@ -1,4 +1,4 @@
-VER=3.44.0
+VER=3.58.1
 SRCS="https://download.gnome.org/sources/metacity/${VER:0:4}/metacity-$VER.tar.xz"
-CHKSUMS="sha256::19c3c5d79d2171f45baa0f632cc8995f8607bf1231a16014439bac9ba165a7c0"
+CHKSUMS="sha256::e430c8a92409ef2f91a4dabd50a71e3d3bbcc474a3dec1caec3813b381d7d1b0"
 CHKUPDATE="anitya::id=15392"
