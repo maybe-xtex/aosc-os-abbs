@@ -1,18 +1,20 @@
 PKGNAME=rygel
 PKGSEC=gnome
-PKGDEP="gstreamer gtk-3 gupnp-av gupnp-dlna hicolor-icon-theme libgee libunistring \
-        tracker tracker-miners xdg-utils"
-BUILDDEP="gobject-introspection gtk-doc intltool vala"
-PKGDES="A home media solution for media sharing and controls"
+PKGDEP="gstreamer gtk-4 gupnp gupnp-av gupnp-dlna libsoup-3 libmediaart \
+        localsearch sqlite"
+BUILDDEP="gobject-introspection vala"
+PKGDES="Home media solution for media sharing and controls"
 
 MESON_AFTER=(
-        "-Duninstalled=false"
-        "-Dapi-docs=false"
-        "-Dplugins=external,gst-launch,lms,media-export,mpris,playbin,ruih,tracker3"
-        "-Dengines=simple,gstreamer"
-        "-Dexamples=true"
-        "-Dgstreamer=enabled"
-        "-Dgtk=enabled"
-        "-Dintrospection=enabled"
-        "-Dfatal_warnings=false"
+    '-Duninstalled=false'
+    '-Dapi-docs=false'
+    '-Dman_pages=true'
+    '-Dplugins=external,gst-launch,media-export,mpris,playbin,ruih,localsearch'
+    '-Dengines=simple,gstreamer'
+    '-Dexamples=false'
+    '-Dtests=false'
+    '-Dgstreamer=enabled'
+    '-Dgtk=enabled'
+    '-Dintrospection=enabled'
+    '-Dfatal_warnings=false'
 )
