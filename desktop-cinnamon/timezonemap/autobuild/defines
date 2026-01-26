@@ -1,5 +1,0 @@
-PKGNAME=timezonemap
-PKGSEC=libs
-PKGDEP="gtk-3 json-glib librsvg libsoup"
-BUILDDEP="gnome-common gobject-introspection"
-PKGDES="A timezone map widget for GTK+ 3"
