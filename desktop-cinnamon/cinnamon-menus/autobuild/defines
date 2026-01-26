@@ -1,8 +1,10 @@
 PKGNAME=cinnamon-menus
 PKGSEC=Cinnamon
 PKGDEP="glib"
-BUILDDEP="gnome-common gobject-introspection gtk-doc intltool"
+BUILDDEP="gobject-introspection"
 PKGDES="Cinnamon menu specifications"
 
-MESON_AFTER="-Denable_debug=false \
-             -Denable_docs=true"
+MESON_AFTER=(
+    '-Denable_debug=false'
+    '-Denable_docs=false'
+)
