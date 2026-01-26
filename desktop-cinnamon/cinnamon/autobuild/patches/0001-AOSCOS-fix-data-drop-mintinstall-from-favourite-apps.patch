@@ -1,0 +1,26 @@
+From c6c6431f45595f967cfdf19eceee847d164426e1 Mon Sep 17 00:00:00 2001
+From: Mingcong Bai <jeffbai@aosc.io>
+Date: Mon, 26 Jan 2026 21:09:16 +0800
+Subject: [PATCH 1/4] AOSCOS: fix(data): drop mintinstall from favourite apps
+
+Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
+---
+ data/org.cinnamon.gschema.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/data/org.cinnamon.gschema.xml b/data/org.cinnamon.gschema.xml
+index 46d0315d5..e3ef3e494 100644
+--- a/data/org.cinnamon.gschema.xml
++++ b/data/org.cinnamon.gschema.xml
+@@ -329,7 +329,7 @@
+     </key>
+ 
+     <key name="favorite-apps" type="as">
+-      <default>[ 'org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'org.x.editor.desktop', 'mintinstall.desktop', 'cinnamon-settings.desktop' ]</default>
++      <default>[ 'org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'org.x.editor.desktop', 'cinnamon-settings.desktop' ]</default>
+       <summary>List of desktop file IDs for favorite applications</summary>
+       <description>
+         The applications corresponding to these identifiers
+-- 
+2.52.0
+

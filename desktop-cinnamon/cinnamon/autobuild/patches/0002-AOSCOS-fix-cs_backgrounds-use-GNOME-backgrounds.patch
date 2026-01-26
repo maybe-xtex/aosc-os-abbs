@@ -1,0 +1,26 @@
+From 8766e9781a32be3bb5a9140e1d13f3b3e1cbf560 Mon Sep 17 00:00:00 2001
+From: Mingcong Bai <jeffbai@aosc.io>
+Date: Mon, 26 Jan 2026 21:15:01 +0800
+Subject: [PATCH 2/4] AOSCOS: fix(cs_backgrounds): use GNOME backgrounds
+
+Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
+---
+ .../share/cinnamon/cinnamon-settings/modules/cs_backgrounds.py  | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/files/usr/share/cinnamon/cinnamon-settings/modules/cs_backgrounds.py b/files/usr/share/cinnamon/cinnamon-settings/modules/cs_backgrounds.py
+index 75f0b5751..fe646036b 100755
+--- a/files/usr/share/cinnamon/cinnamon-settings/modules/cs_backgrounds.py
++++ b/files/usr/share/cinnamon/cinnamon-settings/modules/cs_backgrounds.py
+@@ -319,7 +319,7 @@ class Module:
+     def get_system_backgrounds(self):
+         picture_list = []
+         folder_list = []
+-        properties_dir = "/usr/share/cinnamon-background-properties"
++        properties_dir = "/usr/share/gnome-background-properties"
+         backgrounds = []
+         if os.path.exists(properties_dir):
+             for i in os.listdir(properties_dir):
+-- 
+2.52.0
+

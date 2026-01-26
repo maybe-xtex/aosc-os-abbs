@@ -1,8 +1,18 @@
+From 60b26d8cbb84d9251562504d2e9fef067a94bd2c Mon Sep 17 00:00:00 2001
+From: Mingcong Bai <jeffbai@aosc.io>
+Date: Mon, 26 Jan 2026 21:29:51 +0800
+Subject: [PATCH 3/4] AOSCOS: fix(gschema): set default theme to cinnamon
+
+Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
+---
+ data/org.cinnamon.gschema.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 diff --git a/data/org.cinnamon.gschema.xml b/data/org.cinnamon.gschema.xml
-index edd5104a5..081127b6f 100644
+index e3ef3e494..79e7a1a92 100644
 --- a/data/org.cinnamon.gschema.xml
 +++ b/data/org.cinnamon.gschema.xml
-@@ -598,7 +598,7 @@
+@@ -609,7 +609,7 @@
    <schema id="org.cinnamon.theme" path="/org/cinnamon/theme/"
          gettext-domain="@GETTEXT_PACKAGE@">
      <key name="name" type="s">
@@ -11,3 +21,6 @@ index edd5104a5..081127b6f 100644
        <summary>Theme name</summary>
        <description>
         The name of the theme
+-- 
+2.52.0
+

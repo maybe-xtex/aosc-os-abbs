@@ -1,5 +1,16 @@
+From 0d96f8634592e88737cc022ad68bc8cb2ad8bbb0 Mon Sep 17 00:00:00 2001
+From: Mingcong Bai <jeffbai@aosc.io>
+Date: Mon, 26 Jan 2026 21:30:23 +0800
+Subject: [PATCH 4/4] AOSCOS: feat(user): use wheel group for user
+ administration
+
+Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
+---
+ .../cinnamon-settings-users.py                | 20 ++++++-------------
+ 1 file changed, 6 insertions(+), 14 deletions(-)
+
 diff --git a/files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py b/files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py
-index 46dd63256..81fc3db7d 100755
+index f19fcfc94..77043d44d 100755
 --- a/files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py
 +++ b/files/usr/share/cinnamon/cinnamon-settings-users/cinnamon-settings-users.py
 @@ -182,12 +182,11 @@ class EditableEntry (Gtk.Notebook):
@@ -32,7 +43,7 @@ index 46dd63256..81fc3db7d 100755
          self.destroy()
  
      def set_passwords_visibility(self):
-@@ -613,7 +605,7 @@ class Module:
+@@ -609,7 +601,7 @@ class Module:
          model, treeiter = self.users_treeview.get_selection().get_selected()
          if treeiter is not None:
              user = model[treeiter][INDEX_USER_OBJECT]
@@ -41,9 +52,9 @@ index 46dd63256..81fc3db7d 100755
              response = dialog.run()
  
      def _on_groups_button_clicked(self, widget):
-@@ -899,11 +891,11 @@ class Module:
+@@ -898,11 +890,11 @@ class Module:
              pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size("/usr/share/cinnamon/faces/user-generic.png", 48, 48)
-             description = "<b>%s</b>\n%s" % (fullname, username)
+             description = "<b>%s</b>\n%s" % (GLib.markup_escape_text(fullname), GLib.markup_escape_text(username))
              piter = self.users.append(None, [new_user, pixbuf, description])
 -            # Add the user to his/her own group and sudo if Administrator was selected
 +            # Add the user to his/her own group and wheel if Administrator was selected
@@ -56,3 +67,6 @@ index 46dd63256..81fc3db7d 100755
              self.load_groups()
          dialog.destroy()
  
+-- 
+2.52.0
+
