@@ -1,0 +1,27 @@
+diff --git a/schemas/org.cinnamon.desktop.background.gschema.xml.in b/schemas/org.cinnamon.desktop.background.gschema.xml.in
+index 87ec1e8..5f43a90 100644
+--- a/schemas/org.cinnamon.desktop.background.gschema.xml.in
++++ b/schemas/org.cinnamon.desktop.background.gschema.xml.in
+@@ -11,13 +11,21 @@
+       </description>
+     </key>
+     <key name="picture-uri" type="s">
+-      <default>'file://@datadir@/themes/Adwaita/backgrounds/adwaita-timed.xml'</default>
++      <default>'file://@datadir@/backgrounds/gnome/adwaita-l.jxl'</default>
+       <summary>Picture URI</summary>
+       <description>
+         URI to use for the background image. Not that the backend only supports
+         local (file://) URIs.
+       </description>
+     </key>
++    <key name="picture-uri-dark" type="s">
++      <default>'file://@datadir@/backgrounds/gnome/adwaita-d.jxl'</default>
++      <summary>Picture URI (dark)</summary>
++      <description>
++        URI to use for the background image. Not that the backend only supports
++        local (file://) URIs.
++      </description>
++    </key>
+     <key name="picture-opacity" type="i">
+       <range min="0" max="100"/>
+       <default>100</default>

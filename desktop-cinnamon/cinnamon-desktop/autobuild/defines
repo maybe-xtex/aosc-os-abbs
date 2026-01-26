@@ -1,7 +1,11 @@
-PKGNAME=cinnamon-desktop 
+PKGNAME=cinnamon-desktop
 PKGSEC=Cinnamon
-PKGDEP="desktop-base gdk-pixbuf gtk-3 accountsservice pulseaudio"
-BUILDDEP="gnome-common gobject-introspection intltool"
-PKGDES="Library with common API for various Cinnamon modules"
+PKGDEP="gdk-pixbuf gtk-3 iso-codes pulseaudio systemd xkeyboard-config"
+BUILDDEP="gobject-introspection"
+PKGDES="Library to provide common API for Cinnamon modules"
 
-MESON_AFTER="-Dalsa=true"
+ABTYPE=meson
+MESON_AFTER=(
+    '-Dalsa=true'
+    '-Dsystemd=enabled'
+)
