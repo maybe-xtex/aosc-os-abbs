@@ -1,26 +1,19 @@
-From 5e95b062d53dba68b623f9e4f143ed7fad40af61 Mon Sep 17 00:00:00 2001
+From 0eb73f384d07f0ce9642de6c36e04d0723e5c6af Mon Sep 17 00:00:00 2001
 From: xtex <xtexchooser@duck.com>
 Date: Mon, 5 May 2025 15:45:11 +0800
-Subject: [PATCH 4/4] AOSCOS: Fix bpy_driver for Python 3.14
-X-Developer-Signature: v=1; a=openpgp-sha256; l=706; i=xtexchooser@duck.com;
- h=from:subject; bh=t8LNIdDqNun3if6zZFxCegZPLERmbRgvn4k4kMBDpzk=;
- b=kA0DAAoWuRgIbtgEW5EByyZiAGgYbKegs2byxF5VGqsxo1OuWTarLeWf5LMYn9oqirnn83coI
- Yh1BAAWCgAdFiEEcjGASwUsZw8VpncduRgIbtgEW5EFAmgYbKcACgkQuRgIbtgEW5FgUAD+LYqX
- Wv+n93NjqNS0RwIJEX0rZqfIBwQHL8TwiPaQWHgBAPy+eO5ASVsCEI6IeR3fJl1tYRs8v8jdi+T
- mXFoHWKoC
-X-Developer-Key: i=xtexchooser@duck.com; a=openpgp;
- fpr=7231804B052C670F15A6771DB918086ED8045B91
+Subject: [PATCH 7/7] AOSCOS: Fix bpy_driver for Python 3.14
 
 cpython commit
 a1417b211f0bb9582b00f7b82d0a43a3bcc9ed05
 
 Signed-off-by: xtex <xtexchooser@duck.com>
+Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
 ---
  source/blender/python/intern/bpy_driver.cc | 1 -
  1 file changed, 1 deletion(-)
 
 diff --git a/source/blender/python/intern/bpy_driver.cc b/source/blender/python/intern/bpy_driver.cc
-index a0b1384905aa..b72ae2328166 100644
+index a0b1384905a..b72ae232816 100644
 --- a/source/blender/python/intern/bpy_driver.cc
 +++ b/source/blender/python/intern/bpy_driver.cc
 @@ -327,7 +327,6 @@ static bool is_opcode_secure(const int opcode)
@@ -32,5 +25,5 @@ index a0b1384905aa..b72ae2328166 100644
  #  if PY_VERSION_HEX < 0x030c0000
      OK_OP(LIST_TO_TUPLE)
 -- 
-2.49.0
+2.52.0
 

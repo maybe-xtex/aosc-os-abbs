@@ -1,22 +1,15 @@
-From ab19027284a07554e15f5b3eee694a335fc23ba1 Mon Sep 17 00:00:00 2001
+From aaff6e9a21a3391434e44fd5cca89b1df6da5e8d Mon Sep 17 00:00:00 2001
 From: xtex <xtexchooser@duck.com>
 Date: Mon, 5 May 2025 15:03:51 +0800
-Subject: [PATCH 2/4] AOSCOS: Fix for Python 3.14/3.13+ _PyArg_Parser signature
+Subject: [PATCH 5/7] AOSCOS: Fix for Python 3.14/3.13+ _PyArg_Parser signature
  change
-X-Developer-Signature: v=1; a=openpgp-sha256; l=36458; i=xtexchooser@duck.com;
- h=from:subject; bh=o4DlKq2xhSncfv0YITziRMkv4u5mANUPay+c0AOR6wA=;
- b=owGbwMvMwCW2U4Ij7wZL9ETG02pJDBkSOcuS1k5uilux7FAOp5LI/rqaMxzXVnFP9Dh5dsllk
- 2jbRC6ljlIWBjEuBlkxRZYiwwZvVp10ftFl5bIwc1iZQIYwcHEKwESE+hj+V+2/71s36fqORzWq
- O///fePhkq+nW31LeRWH87Nb728FzmJk2Hatb1nqijTthY0uCQzGs5Ll36XuKtO7WbRs/ZlNCSX
- bOAE=
-X-Developer-Key: i=xtexchooser@duck.com; a=openpgp;
- fpr=7231804B052C670F15A6771DB918086ED8045B91
 
 cpython commit f8373db153920b890c2e2dd8def249e8df63bcc6 restored the
 removed _PyArg_Parser structure but its inner signature is a bit
 different from the original one.
 
 Signed-off-by: xtex <xtexchooser@duck.com>
+Signed-off-by: Mingcong Bai <jeffbai@aosc.io>
 ---
  source/blender/python/generic/imbuf_py_api.cc | 10 ++++----
  source/blender/python/gpu/gpu_py_batch.cc     |  6 ++---
@@ -48,7 +41,7 @@ Signed-off-by: xtex <xtexchooser@duck.com>
  27 files changed, 70 insertions(+), 70 deletions(-)
 
 diff --git a/source/blender/python/generic/imbuf_py_api.cc b/source/blender/python/generic/imbuf_py_api.cc
-index 4168ef49fc84..1cf330651bf1 100644
+index 4168ef49fc8..1cf330651bf 100644
 --- a/source/blender/python/generic/imbuf_py_api.cc
 +++ b/source/blender/python/generic/imbuf_py_api.cc
 @@ -94,7 +94,7 @@ static PyObject *py_imbuf_resize(Py_ImBuf *self, PyObject *args, PyObject *kw)
@@ -97,7 +90,7 @@ index 4168ef49fc84..1cf330651bf1 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "O!" /* `image` */
 diff --git a/source/blender/python/gpu/gpu_py_batch.cc b/source/blender/python/gpu/gpu_py_batch.cc
-index 546704aae9d7..e1c1aa3e55e5 100644
+index 546704aae9d..e1c1aa3e55e 100644
 --- a/source/blender/python/gpu/gpu_py_batch.cc
 +++ b/source/blender/python/gpu/gpu_py_batch.cc
 @@ -57,7 +57,7 @@ static PyObject *pygpu_batch__tp_new(PyTypeObject * /*type*/, PyObject *args, Py
@@ -128,7 +121,7 @@ index 546704aae9d7..e1c1aa3e55e5 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "O!" /* `program` */
 diff --git a/source/blender/python/gpu/gpu_py_compute.cc b/source/blender/python/gpu/gpu_py_compute.cc
-index ce77bc46cc77..efaa6318a287 100644
+index ce77bc46cc7..efaa6318a28 100644
 --- a/source/blender/python/gpu/gpu_py_compute.cc
 +++ b/source/blender/python/gpu/gpu_py_compute.cc
 @@ -47,7 +47,7 @@ static PyObject *pygpu_compute_dispatch(PyObject * /*self*/, PyObject *args, PyO
@@ -141,7 +134,7 @@ index ce77bc46cc77..efaa6318a287 100644
    static _PyArg_Parser _parser = {
          PY_ARG_PARSER_HEAD_COMPAT()
 diff --git a/source/blender/python/gpu/gpu_py_element.cc b/source/blender/python/gpu/gpu_py_element.cc
-index ddb747de53b7..29f1ac211cd0 100644
+index ddb747de53b..29f1ac211cd 100644
 --- a/source/blender/python/gpu/gpu_py_element.cc
 +++ b/source/blender/python/gpu/gpu_py_element.cc
 @@ -39,7 +39,7 @@ static PyObject *pygpu_IndexBuf__tp_new(PyTypeObject * /*type*/, PyObject *args,
@@ -154,7 +147,7 @@ index ddb747de53b7..29f1ac211cd0 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "$O" /* `type` */
 diff --git a/source/blender/python/gpu/gpu_py_framebuffer.cc b/source/blender/python/gpu/gpu_py_framebuffer.cc
-index ae4de5bfd65d..986f4c1b5781 100644
+index ae4de5bfd65..986f4c1b578 100644
 --- a/source/blender/python/gpu/gpu_py_framebuffer.cc
 +++ b/source/blender/python/gpu/gpu_py_framebuffer.cc
 @@ -332,7 +332,7 @@ static PyObject *pygpu_framebuffer__tp_new(PyTypeObject * /*self*/, PyObject *ar
@@ -194,7 +187,7 @@ index ae4de5bfd65d..986f4c1b5781 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "i"  /* `x` */
 diff --git a/source/blender/python/gpu/gpu_py_offscreen.cc b/source/blender/python/gpu/gpu_py_offscreen.cc
-index 023135e0ed7f..a1d8350114dd 100644
+index 023135e0ed7..a1d8350114d 100644
 --- a/source/blender/python/gpu/gpu_py_offscreen.cc
 +++ b/source/blender/python/gpu/gpu_py_offscreen.cc
 @@ -245,7 +245,7 @@ static PyObject *pygpu_offscreen_unbind(BPyGPUOffScreen *self, PyObject *args, P
@@ -225,7 +218,7 @@ index 023135e0ed7f..a1d8350114dd 100644
        "view_layer",
        "view3d",
 diff --git a/source/blender/python/gpu/gpu_py_shader.cc b/source/blender/python/gpu/gpu_py_shader.cc
-index 9541ff66e246..d6e2b434823a 100644
+index 9541ff66e24..d6e2b434823 100644
 --- a/source/blender/python/gpu/gpu_py_shader.cc
 +++ b/source/blender/python/gpu/gpu_py_shader.cc
 @@ -118,7 +118,7 @@ static PyObject *pygpu_shader__tp_new(PyTypeObject * /*type*/, PyObject *args, P
@@ -247,7 +240,7 @@ index 9541ff66e246..d6e2b434823a 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "O&" /* `shader_name` */
 diff --git a/source/blender/python/gpu/gpu_py_shader_create_info.cc b/source/blender/python/gpu/gpu_py_shader_create_info.cc
-index 51ae2c015536..4ee47e0af283 100644
+index 51ae2c01553..4ee47e0af28 100644
 --- a/source/blender/python/gpu/gpu_py_shader_create_info.cc
 +++ b/source/blender/python/gpu/gpu_py_shader_create_info.cc
 @@ -596,7 +596,7 @@ static PyObject *pygpu_shader_info_fragment_out(BPyGPUShaderCreateInfo *self,
@@ -278,7 +271,7 @@ index 51ae2c015536..4ee47e0af283 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "O&" /* `type` */
 diff --git a/source/blender/python/gpu/gpu_py_texture.cc b/source/blender/python/gpu/gpu_py_texture.cc
-index b7de83f9f05a..8e363f312259 100644
+index b7de83f9f05..8e363f31225 100644
 --- a/source/blender/python/gpu/gpu_py_texture.cc
 +++ b/source/blender/python/gpu/gpu_py_texture.cc
 @@ -125,7 +125,7 @@ static PyObject *pygpu_texture__tp_new(PyTypeObject * /*self*/, PyObject *args,
@@ -300,7 +293,7 @@ index b7de83f9f05a..8e363f312259 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "$"  /* Keyword only arguments. */
 diff --git a/source/blender/python/gpu/gpu_py_uniformbuffer.cc b/source/blender/python/gpu/gpu_py_uniformbuffer.cc
-index 6fb756f9ee6b..849ea52bb645 100644
+index 6fb756f9ee6..849ea52bb64 100644
 --- a/source/blender/python/gpu/gpu_py_uniformbuffer.cc
 +++ b/source/blender/python/gpu/gpu_py_uniformbuffer.cc
 @@ -66,7 +66,7 @@ static PyObject *pygpu_uniformbuffer__tp_new(PyTypeObject * /*self*/,
@@ -313,7 +306,7 @@ index 6fb756f9ee6b..849ea52bb645 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "O" /* `data` */
 diff --git a/source/blender/python/gpu/gpu_py_vertex_buffer.cc b/source/blender/python/gpu/gpu_py_vertex_buffer.cc
-index 9683266ed586..c15d6c8f5d91 100644
+index 9683266ed58..c15d6c8f5d9 100644
 --- a/source/blender/python/gpu/gpu_py_vertex_buffer.cc
 +++ b/source/blender/python/gpu/gpu_py_vertex_buffer.cc
 @@ -236,7 +236,7 @@ static PyObject *pygpu_vertbuf__tp_new(PyTypeObject * /*type*/, PyObject *args,
@@ -335,7 +328,7 @@ index 9683266ed586..c15d6c8f5d91 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "O" /* `id` */
 diff --git a/source/blender/python/gpu/gpu_py_vertex_format.cc b/source/blender/python/gpu/gpu_py_vertex_format.cc
-index 8fde494f31cb..009c244c7ae2 100644
+index 8fde494f31c..009c244c7ae 100644
 --- a/source/blender/python/gpu/gpu_py_vertex_format.cc
 +++ b/source/blender/python/gpu/gpu_py_vertex_format.cc
 @@ -93,7 +93,7 @@ static PyObject *pygpu_vertformat_attr_add(BPyGPUVertFormat *self, PyObject *arg
@@ -348,7 +341,7 @@ index 8fde494f31cb..009c244c7ae2 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "$"  /* Keyword only arguments. */
 diff --git a/source/blender/python/intern/bpy.cc b/source/blender/python/intern/bpy.cc
-index 66e699607d84..8b7edc94a400 100644
+index 66e699607d8..8b7edc94a40 100644
 --- a/source/blender/python/intern/bpy.cc
 +++ b/source/blender/python/intern/bpy.cc
 @@ -121,7 +121,7 @@ static PyObject *bpy_blend_paths(PyObject * /*self*/, PyObject *args, PyObject *
@@ -406,7 +399,7 @@ index 66e699607d84..8b7edc94a400 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "O!" /* `expression` */
 diff --git a/source/blender/python/intern/bpy_app.cc b/source/blender/python/intern/bpy_app.cc
-index fce01a9e1f63..2627a4597d19 100644
+index fce01a9e1f6..2627a4597d1 100644
 --- a/source/blender/python/intern/bpy_app.cc
 +++ b/source/blender/python/intern/bpy_app.cc
 @@ -581,7 +581,7 @@ static PyObject *bpy_app_is_job_running(PyObject * /*self*/, PyObject *args, PyO
@@ -428,7 +421,7 @@ index fce01a9e1f63..2627a4597d19 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "|$" /* Optional keyword only arguments. */
 diff --git a/source/blender/python/intern/bpy_app_icons.cc b/source/blender/python/intern/bpy_app_icons.cc
-index 003535686c4c..8d03a975253a 100644
+index 003535686c4..8d03a975253 100644
 --- a/source/blender/python/intern/bpy_app_icons.cc
 +++ b/source/blender/python/intern/bpy_app_icons.cc
 @@ -41,7 +41,7 @@ static PyObject *bpy_app_icons_new_triangles(PyObject * /*self*/, PyObject *args
@@ -459,7 +452,7 @@ index 003535686c4c..8d03a975253a 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "i" /* `icon_id` */
 diff --git a/source/blender/python/intern/bpy_app_timers.cc b/source/blender/python/intern/bpy_app_timers.cc
-index 95ef356844c2..95dd95a5db48 100644
+index 95ef356844c..95dd95a5db4 100644
 --- a/source/blender/python/intern/bpy_app_timers.cc
 +++ b/source/blender/python/intern/bpy_app_timers.cc
 @@ -92,7 +92,7 @@ static PyObject *bpy_app_timers_register(PyObject * /*self*/, PyObject *args, Py
@@ -472,7 +465,7 @@ index 95ef356844c2..95dd95a5db48 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "O"  /* `function` */
 diff --git a/source/blender/python/intern/bpy_cli_command.cc b/source/blender/python/intern/bpy_cli_command.cc
-index feac498bd92b..f7a5012aa063 100644
+index feac498bd92..f7a5012aa06 100644
 --- a/source/blender/python/intern/bpy_cli_command.cc
 +++ b/source/blender/python/intern/bpy_cli_command.cc
 @@ -206,7 +206,7 @@ static PyObject *bpy_cli_command_register(PyObject * /*self*/, PyObject *args, P
@@ -485,7 +478,7 @@ index feac498bd92b..f7a5012aa063 100644
        "execute",
        nullptr,
 diff --git a/source/blender/python/intern/bpy_library_load.cc b/source/blender/python/intern/bpy_library_load.cc
-index a664d6dd8f76..f98c9462b1c9 100644
+index a664d6dd8f7..f98c9462b1c 100644
 --- a/source/blender/python/intern/bpy_library_load.cc
 +++ b/source/blender/python/intern/bpy_library_load.cc
 @@ -190,7 +190,7 @@ static PyObject *bpy_lib_load(BPy_PropertyRNA *self, PyObject *args, PyObject *k
@@ -498,7 +491,7 @@ index a664d6dd8f76..f98c9462b1c9 100644
        "link",
        "relative",
 diff --git a/source/blender/python/intern/bpy_library_write.cc b/source/blender/python/intern/bpy_library_write.cc
-index 7b0b334f0753..e354eac80d08 100644
+index 7b0b334f075..e354eac80d0 100644
 --- a/source/blender/python/intern/bpy_library_write.cc
 +++ b/source/blender/python/intern/bpy_library_write.cc
 @@ -79,7 +79,7 @@ static PyObject *bpy_lib_write(BPy_PropertyRNA *self, PyObject *args, PyObject *
@@ -511,7 +504,7 @@ index 7b0b334f0753..e354eac80d08 100644
        "datablocks",
        "path_remap",
 diff --git a/source/blender/python/intern/bpy_msgbus.cc b/source/blender/python/intern/bpy_msgbus.cc
-index 6b02e3be5a38..0daf240cd561 100644
+index 6b02e3be5a3..0daf240cd56 100644
 --- a/source/blender/python/intern/bpy_msgbus.cc
 +++ b/source/blender/python/intern/bpy_msgbus.cc
 @@ -229,7 +229,7 @@ static PyObject *bpy_msgbus_subscribe_rna(PyObject * /*self*/, PyObject *args, P
@@ -533,7 +526,7 @@ index 6b02e3be5a38..0daf240cd561 100644
        nullptr,
    };
 diff --git a/source/blender/python/intern/bpy_operator.cc b/source/blender/python/intern/bpy_operator.cc
-index 4fd803440934..a49a17415cae 100644
+index 4fd80344093..a49a17415ca 100644
 --- a/source/blender/python/intern/bpy_operator.cc
 +++ b/source/blender/python/intern/bpy_operator.cc
 @@ -80,7 +80,7 @@ static PyObject *pyop_poll(PyObject * /*self*/, PyObject *args)
@@ -564,7 +557,7 @@ index 4fd803440934..a49a17415cae 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "s"  /* `opname` */
 diff --git a/source/blender/python/intern/bpy_props.cc b/source/blender/python/intern/bpy_props.cc
-index 2358d6a8ebe4..7863f2efe11c 100644
+index 2358d6a8ebe..7863f2efe11 100644
 --- a/source/blender/python/intern/bpy_props.cc
 +++ b/source/blender/python/intern/bpy_props.cc
 @@ -1388,7 +1388,7 @@ static bool bpy_prop_string_visit_fn_call(
@@ -676,7 +669,7 @@ index 2358d6a8ebe4..7863f2efe11c 100644
        nullptr,
    };
 diff --git a/source/blender/python/intern/bpy_rna.cc b/source/blender/python/intern/bpy_rna.cc
-index 30521e34d257..a1a952ec6282 100644
+index 30521e34d25..a1a952ec628 100644
 --- a/source/blender/python/intern/bpy_rna.cc
 +++ b/source/blender/python/intern/bpy_rna.cc
 @@ -3677,7 +3677,7 @@ static PyObject *pyrna_struct_is_property_set(BPy_StructRNA *self, PyObject *arg
@@ -689,7 +682,7 @@ index 30521e34d257..a1a952ec6282 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "s"  /* `name` (positional). */
 diff --git a/source/blender/python/intern/bpy_rna_data.cc b/source/blender/python/intern/bpy_rna_data.cc
-index 75180b953ba9..c69222db6a94 100644
+index 75180b953ba..c69222db6a9 100644
 --- a/source/blender/python/intern/bpy_rna_data.cc
 +++ b/source/blender/python/intern/bpy_rna_data.cc
 @@ -143,7 +143,7 @@ static PyObject *bpy_rna_data_temp_data(PyObject * /*self*/, PyObject *args, PyO
@@ -702,7 +695,7 @@ index 75180b953ba9..c69222db6a94 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "|$" /* Optional keyword only arguments. */
 diff --git a/source/blender/python/intern/bpy_rna_id_collection.cc b/source/blender/python/intern/bpy_rna_id_collection.cc
-index 158a8742a845..08c287a1d679 100644
+index 158a8742a84..08c287a1d67 100644
 --- a/source/blender/python/intern/bpy_rna_id_collection.cc
 +++ b/source/blender/python/intern/bpy_rna_id_collection.cc
 @@ -174,7 +174,7 @@ static PyObject *bpy_user_map(PyObject *self, PyObject *args, PyObject *kwds)
@@ -742,7 +735,7 @@ index 158a8742a845..08c287a1d679 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "|"  /* Optional arguments. */
 diff --git a/source/blender/python/intern/bpy_rna_text.cc b/source/blender/python/intern/bpy_rna_text.cc
-index bc42b22f1ab5..db272840b505 100644
+index bc42b22f1ab..db272840b50 100644
 --- a/source/blender/python/intern/bpy_rna_text.cc
 +++ b/source/blender/python/intern/bpy_rna_text.cc
 @@ -65,7 +65,7 @@ static PyObject *bpy_rna_region_as_string(PyObject *self, PyObject *args, PyObje
@@ -764,7 +757,7 @@ index bc42b22f1ab5..db272840b505 100644
        PY_ARG_PARSER_HEAD_COMPAT()
        "s#"         /* `buf` (positional). */
 diff --git a/source/blender/python/intern/bpy_utils_units.cc b/source/blender/python/intern/bpy_utils_units.cc
-index b7a8c9a1fec5..9c6cbfe46f1a 100644
+index b7a8c9a1fec..9c6cbfe46f1 100644
 --- a/source/blender/python/intern/bpy_utils_units.cc
 +++ b/source/blender/python/intern/bpy_utils_units.cc
 @@ -175,7 +175,7 @@ static PyObject *bpyunits_to_value(PyObject * /*self*/, PyObject *args, PyObject
@@ -786,5 +779,5 @@ index b7a8c9a1fec5..9c6cbfe46f1a 100644
        "unit_category",
        "value",
 -- 
-2.49.0
+2.52.0
 
