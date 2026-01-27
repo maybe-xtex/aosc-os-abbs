@@ -1,8 +1,9 @@
 PKGNAME=watchman
 PKGSEC=utils
 PKGDEP="boost edencommon fmt folly gflags glog libevent openssl pcre python-3"
-BUILDDEP="cpptoml gtest llvm rustc"
-PKGDES="A file-watching and job-triggering utility based on inotify"
+# FIXME: GCC 15 fails to build this package.
+BUILDDEP="cpptoml gcc-14 gtest llvm rustc"
+PKGDES="File-watching and job-triggering utility based on inotify"
 
 ABTYPE=cmakeninja
 CMAKE_AFTER=(
