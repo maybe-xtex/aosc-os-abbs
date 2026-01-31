@@ -1,12 +1,23 @@
+CONFIGURE_OPT=(
+    '--prefix=/usr'
+    '--with-bzip'
+    '--with-lzma'
+    '--with-zlib'
+    '--with-tpm'
+    '--with-os-feature=getrandom'
+    '--with-debug-info'
+    '--with-rst2man'
+)
+if ab_match_arch loongarch64_nosimd; then
+    CONFIGURE_OPT+=(
+        '--disable-lasx'
+        '--disable-lsx'
+    )
+fi
+
 abinfo "Configuring botan ..."
-"$SRCDIR"/configure.py --prefix=/usr \
-               --with-bzip \
-               --with-lzma \
-               --with-zlib \
-               --with-tpm \
-               --with-os-feature=getrandom \
-               --with-debug-info \
-               --with-rst2man
+"$SRCDIR"/configure.py \
+    ${CONFIGURE_OPT[@]}
 
 abinfo "Building botan ..."
 make
