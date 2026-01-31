@@ -7,3 +7,10 @@ PKGSEC="x11"
 ABTYPE="meson"
 
 ABHOST=noarch
+
+# Note: Limit to architectures with Qt6WebEngine support.
+FAIL_ARCH="!(amd64|arm64|loongarch64|loongarch64_nosimd)"
+
+# Note: Inheriting FAIL_ARCH requires removal of noarch flag, treating as
+# architecture-specific.
+ABSPLITDBG=0
