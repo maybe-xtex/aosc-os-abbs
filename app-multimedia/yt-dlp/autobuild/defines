@@ -1,6 +1,6 @@
 PKGNAME=yt-dlp
 PKGSEC=web
-PKGDEP="atomicparsley brotlicffi certifi curl ffmpeg mutagen pycryptodomex \
+PKGDEP="atomicparsley brotlicffi certifi curl ffmpeg mutagen pycryptodome \
         python-3 quickjs requests rtmpdump secretstorage urllib3 websockets \
         yt-dlp-ejs"
 PKGRECOM="deno"
