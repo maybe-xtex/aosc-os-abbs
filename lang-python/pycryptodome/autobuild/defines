@@ -2,11 +2,11 @@ PKGNAME=pycryptodome
 PKGSEC=python
 PKGDEP="python-3"
 PKGRECOM="gmp"
-BUILDDEP="setuptools-python3"
+BUILDDEP="python-build setuptools-python3"
 PKGDES="Collection of cryptographic algorithms and protocols"
 
-PKGBREAK="pycrypto<=2.6.1-4"
-PKGREP="pycrypto<=2.6.1-4"
-
-ABTYPE=pep517
+PKGBREAK="pycrypto<=2.6.1-4pycryptodomex<=3.23.0 musicbox<=3.9.9-1 yt-dlp<=3.23.0 mycli<=3.23.0"
+PKGREP="pycrypto<=2.6.1-4 pycryptodomex<=3.23.0"
+# NOTE: building both pycryptodome and pycryptodomex in one package.
+ABTYPE=self
 NOPYTHON2=1
