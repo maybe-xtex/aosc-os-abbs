@@ -164,7 +164,6 @@ debconf
 libglvnd
 protobuf
 llvm-20
-qt-6
 sip
 pyopengl
 pyqt6-sip
@@ -1033,7 +1032,6 @@ libpwquality
 aosc-logos
 gom
 libsignon-glib
-qt-6-doc
 libieee1284
 libimobiledevice
 libnvme
