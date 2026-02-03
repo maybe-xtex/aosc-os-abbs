@@ -6,8 +6,6 @@ BUILDDEP="appstream meson ninja"
 PKGSEC="x11"
 ABTYPE="meson"
 
-ABHOST=noarch
-
 # Note: Limit to architectures with Qt6WebEngine support.
 FAIL_ARCH="!(amd64|arm64|loongarch64|loongarch64_nosimd)"
 
