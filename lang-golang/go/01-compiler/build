@@ -8,26 +8,19 @@ export GOROOT_BOOTSTRAP="/usr/lib/go"
 
 if ab_match_arch amd64; then
     export GOARCH="amd64" GOAMD64=v1
-fi
-if ab_match_arch arm64; then
+elif ab_match_arch arm64; then
     export GOARCH="arm64"
-fi
-if ab_match_arch armv6hf; then
+elif ab_match_arch armv6hf; then
     export GOARCH="arm" GOARM=6
-fi
-if ab_match_arch armv7hf; then
+elif ab_match_arch armv7hf; then
     export GOARCH="arm" GOARM=7
-fi
-if ab_match_arch loongarch64 || ab_match_arch loongarch64_nosimd; then
+elif ab_match_arch loongarch64 || ab_match_arch loongarch64_nosimd; then
     export GOARCH="loong64"
-fi
-if ab_match_arch loongson3; then
+elif ab_match_arch loongson3; then
     export GOARCH="mips64le"
-fi
-if ab_match_arch ppc64el; then
+elif ab_match_arch ppc64el; then
     export GOARCH="ppc64le"
-fi
-if ab_match_arch riscv64; then
+elif ab_match_arch riscv64; then
     export GOARCH="riscv64"
 fi
 
@@ -73,8 +66,6 @@ export GOPATH="$SRCDIR/go-tools"
 mkdir -pv "$SRCDIR"/go-tools/src/golang.org/x/
 cp -rv "$SRCDIR"/../tools \
     "$SRCDIR"/go-tools/src/golang.org/x/tools
-cp -rv "$SRCDIR"/../net \
-    "$SRCDIR"/go-tools/src/golang.org/x/net
 
 abinfo "Building extra Go tools ..."
 pushd "$SRCDIR"/go-tools/src/golang.org/x/tools
