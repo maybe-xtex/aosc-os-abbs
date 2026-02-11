@@ -1,5 +1,5 @@
 PKGNAME=libgovirt
 PKGSEC=libs
-PKGDEP="glib rest"
+PKGDEP="glib rest json-glib"
 BUILDDEP="gobject-introspection"
 PKGDES="GObject-based library to access oVirt REST API"
