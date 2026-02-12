@@ -1,4 +1,4 @@
-VER=42.0
+VER=49.0
 SRCS="https://download.gnome.org/sources/gnome-weather/${VER%.*}/gnome-weather-$VER.tar.xz"
-CHKSUMS="sha256::579ee691d853e5bb3ff50e8c7b43f85ae9dd7e5b3a649e02c254a2d9b807b465"
+CHKSUMS="sha256::ee1f76b85eba9db0c8d5c02041a9d85ecdd22abb5ec6bb3ff32225929c0fce5f"
 CHKUPDATE="anitya::id=9546"

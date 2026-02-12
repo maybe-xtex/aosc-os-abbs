@@ -1,7 +1,7 @@
 PKGNAME=gnome-weather
 PKGSEC=gnome
 PKGDEP="desktop-file-utils geoclue2 gjs gtk-4 libadwaita libgweather"
-BUILDDEP="appstream-glib gobject-introspection intltool"
+BUILDDEP="appstream-glib gobject-introspection intltool typescript"
 PKGDES="Access current weather conditions and forecasts"
 
 ABHOST=noarch
