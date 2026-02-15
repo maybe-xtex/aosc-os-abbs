@@ -1,6 +1,6 @@
 PKGNAME=networkmanager-openconnect
 PKGSEC=net
-PKGDEP="at-spi2-core cairo gcc-runtime gcr gdk-pixbuf glib glibc gtk-3 \
+PKGDEP="at-spi2-core cairo gcc-runtime gcr-3 gdk-pixbuf glib glibc gtk-3 \
         harfbuzz libnma libsecret libxml2 networkmanager openconnect pango \
         webkit2gtk zlib"
 BUILDDEP="intltool"
