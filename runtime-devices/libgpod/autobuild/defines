@@ -1,13 +1,15 @@
 PKGNAME=libgpod
 PKGSEC=libs
-PKGDES="A shared library to access the contents of an iPod"
+PKGDES="Library to access the contents of an iPod"
 PKGDEP="gdk-pixbuf mutagen sg3-utils libimobiledevice libplist sqlite"
 BUILDDEP="intltool gtk-doc"
 
-AUTOTOOLS_AFTER="--with-udev-dir=/usr/lib/udev \
-                 --enable-udev \
-                 --enable-gtk-doc \
-                 --without-mono \
-                 --without-python"
+AUTOTOOLS_AFTER=(
+    "--with-udev-dir=/usr/lib/udev"
+    "--enable-udev"
+    "--disable-gtk-doc"
+    "--without-mono"
+    "--without-python"
+)
 
 MAKE_AFTER="PREFIX=/usr"
