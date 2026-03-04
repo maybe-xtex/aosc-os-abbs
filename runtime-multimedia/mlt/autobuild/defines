@@ -56,8 +56,9 @@ CMAKE_AFTER=(
     '-DSWIG_TCL=ON'
 )
 # FIXME: No JNI support?!
-CMAKE_AFTER__LOONGSON3=" \
-             ${CMAKE_AFTER} \
-             -DSWIG_JAVA=OFF"
+CMAKE_AFTER__LOONGSON3=(
+    "${CMAKE_AFTER[@]}"
+    '-DSWIG_JAVA=OFF'
+)
 
 PKGBREAK="kdenlive<=17.12.3 shotcut<=17.08 synfig<=1.2.1-1"
