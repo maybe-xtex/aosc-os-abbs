@@ -1,4 +1,5 @@
 VER=5.0.0
+REL=1
 SRCS="tbl::https://libvirt.org/sources/glib/libvirt-glib-$VER.tar.xz"
 CHKSUMS="sha256::9bfec346382416a3575d87299bc641b2a464aa519fd9b1287e318aa43a2f3b8b"
 CHKUPDATE="anitya::id=11560"
