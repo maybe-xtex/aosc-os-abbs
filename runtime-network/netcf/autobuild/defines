@@ -1,8 +1,11 @@
 PKGNAME=netcf
 PKGSEC=libs
 PKGDEP="augeas libnl libxml2 libxslt"
-PKGDES="A library for configuring network interfaces"
+PKGDES="Library for configuring network interfaces"
 
-AUTOTOOLS_AFTER="--with-driver=redhat \
-                 --libexecdir=/usr/lib/netcf"
+ABTYPE=autotools
+AUTOTOOLS_AFTER=(
+    "--with-driver=redhat"
+    "--libexecdir=/usr/lib/netcf"
+)
 RECONF=0
