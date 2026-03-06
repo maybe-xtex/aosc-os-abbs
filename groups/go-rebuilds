@@ -5,6 +5,7 @@ app-admin/opentofu
 app-admin/prometheus-node-exporter
 app-admin/rootlesskit
 app-admin/runc
+app-admin/sbctl
 app-admin/snapd
 app-containers/buildah
 app-containers/containerd
@@ -63,6 +64,7 @@ app-proxy/v2ray
 app-proxy/v2raya
 app-proxy/xray
 app-proxy/xray-plugin
+app-shells/elvish
 app-utils/automatic-component-toolkit
 app-utils/chezmoi
 app-utils/cliphist
