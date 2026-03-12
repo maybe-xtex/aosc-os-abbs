@@ -1,0 +1,11 @@
+PKGNAME=ros-jazzy-ros2pkg
+PKGSEC=ros
+PKGDEP="ros-jazzy-ros-workspace ros-jazzy-ament-copyright ros-jazzy-ament-index-python catkin-pkg empy setuptools ros-jazzy-ros2cli"
+BUILDDEP="ros-jazzy-ament-flake8 ros-jazzy-ament-pep257 ros-jazzy-ament-xmllint ros-jazzy-launch ros-jazzy-launch-testing ros-jazzy-launch-testing-ros pytest pytest-timeout"
+PKGDES="The pkg command for ROS 2 CLI"
+
+ABTYPE=python
+PREFIX="/opt/ros/jazzy"
+ABSPLITDBG=0
+NOPYTHON2=1
+ABHOST=noarch
