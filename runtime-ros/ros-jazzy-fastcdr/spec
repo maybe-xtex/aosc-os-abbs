@@ -1,0 +1,4 @@
+VER=2.2.7+1
+SRCS="git::commit=tags/release/jazzy/fastcdr/${VER/+/-}::https://github.com/ros2-gbp/fastcdr-release.git"
+CHKSUMS="SKIP"
+CHKUPDATE="github::repo=ros2-gbp/fastcdr-release;pattern=release/jazzy/fastcdr/.*"
