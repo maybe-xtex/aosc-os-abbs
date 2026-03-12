@@ -1,0 +1,4 @@
+VER=2.1.7+1
+SRCS="git::commit=tags/release/jazzy/osrf_pycommon/${VER/+/-}::https://github.com/ros2-gbp/osrf_pycommon-release.git"
+CHKSUMS="SKIP"
+CHKUPDATE="github::repo=ros2-gbp/osrf_pycommon-release;pattern=release/jazzy/osrf_pycommon/.*"
