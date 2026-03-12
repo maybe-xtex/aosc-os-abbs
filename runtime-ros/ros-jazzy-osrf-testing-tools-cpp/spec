@@ -1,0 +1,4 @@
+VER=2.0.0+3
+SRCS="git::commit=tags/release/jazzy/osrf_testing_tools_cpp/${VER/+/-}::https://github.com/ros2-gbp/osrf_testing_tools_cpp-release.git"
+CHKSUMS="SKIP"
+CHKUPDATE="github::repo=ros2-gbp/osrf_testing_tools_cpp-release;pattern=release/jazzy/osrf_testing_tools_cpp/.*"

@@ -1,0 +1,14 @@
+PKGNAME=ros-jazzy-osrf-testing-tools-cpp
+PKGSEC=ros
+PKGDEP="ros-jazzy-ros-workspace"
+BUILDDEP="cmake"
+PKGDES="Testing tools used by OSRF C++ projects"
+
+ABTYPE=cmakeninja
+PREFIX="/opt/ros/jazzy"
+ABSPLITDBG=0
+NOSTATIC=0
+CMAKE_AFTER=(
+    "-DCMAKE_PREFIX_PATH=/opt/ros/jazzy"
+    "-DBUILD_TESTING=OFF"
+)
