@@ -1,0 +1,4 @@
+VER=0.13.6+1
+SRCS="git::commit=tags/release/jazzy/sros2_cmake/${VER/+/-}::https://github.com/ros2-gbp/sros2-release.git"
+CHKSUMS="SKIP"
+CHKUPDATE="github::repo=ros2-gbp/sros2-release;pattern=release/jazzy/sros2_cmake/.*"
