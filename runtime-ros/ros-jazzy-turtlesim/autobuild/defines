@@ -1,0 +1,14 @@
+PKGNAME=ros-jazzy-turtlesim
+PKGSEC=ros
+PKGDEP="ros-jazzy-ros-workspace ros-jazzy-ament-index-cpp ros-jazzy-geometry-msgs ros-jazzy-rcl-interfaces ros-jazzy-rclcpp ros-jazzy-rclcpp-action ros-jazzy-std-msgs ros-jazzy-std-srvs qt-5 qt-5 ros-jazzy-rosidl-default-runtime"
+BUILDDEP="ros-jazzy-ament-cmake ros-jazzy-rosidl-default-generators ros-jazzy-ament-lint-auto ros-jazzy-ament-lint-common"
+PKGDES="Tutorial demo for ROS 2 and ROS 2 packages"
+
+ABTYPE=cmakeninja
+PREFIX="/opt/ros/jazzy"
+ABSPLITDBG=0
+NOSTATIC=0
+CMAKE_AFTER=(
+    "-DCMAKE_PREFIX_PATH=/opt/ros/jazzy"
+    "-DBUILD_TESTING=OFF"
+)
