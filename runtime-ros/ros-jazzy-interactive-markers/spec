@@ -1,0 +1,4 @@
+VER=2.5.5+1
+SRCS="git::commit=tags/release/jazzy/interactive_markers/${VER/+/-}::https://github.com/ros2-gbp/interactive_markers-release.git"
+CHKSUMS="SKIP"
+CHKUPDATE="github::repo=ros2-gbp/interactive_markers-release;pattern=release/jazzy/interactive_markers/.*"
