@@ -1,0 +1,14 @@
+PKGNAME=ros-jazzy-pluginlib
+PKGSEC=ros
+PKGDEP="ros-jazzy-ros-workspace ros-jazzy-ament-index-cpp ros-jazzy-class-loader ros-jazzy-rcutils ros-jazzy-rcpputils ros-jazzy-tinyxml2-vendor"
+BUILDDEP="ros-jazzy-ament-cmake ros-jazzy-ament-cmake-gtest"
+PKGDES="Library to facilitate implementation of dynamically-loaded plugins using ROS 2 build infrastructure"
+
+ABTYPE=cmakeninja
+PREFIX="/opt/ros/jazzy"
+ABSPLITDBG=0
+NOSTATIC=0
+CMAKE_AFTER=(
+    "-DCMAKE_PREFIX_PATH=/opt/ros/jazzy"
+    "-DBUILD_TESTING=OFF"
+)
