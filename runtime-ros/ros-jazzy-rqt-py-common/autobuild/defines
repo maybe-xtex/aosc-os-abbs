@@ -1,0 +1,14 @@
+PKGNAME=ros-jazzy-rqt-py-common
+PKGSEC=ros
+PKGDEP="ros-jazzy-ros-workspace qt-5 ros-jazzy-rclpy ros-jazzy-python-qt-binding ros-jazzy-qt-gui"
+BUILDDEP="ros-jazzy-ament-cmake ros-jazzy-ament-cmake-pytest ros-jazzy-python-cmake-module ros-jazzy-rosidl-default-generators ros-jazzy-rosidl-default-runtime"
+PKGDES="Common APIs for rqt Python plugins"
+
+ABTYPE=cmakeninja
+PREFIX="/opt/ros/jazzy"
+ABSPLITDBG=0
+NOSTATIC=0
+CMAKE_AFTER=(
+    "-DCMAKE_PREFIX_PATH=/opt/ros/jazzy"
+    "-DBUILD_TESTING=OFF"
+)
