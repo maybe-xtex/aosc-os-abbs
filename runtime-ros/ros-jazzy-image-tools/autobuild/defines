@@ -1,0 +1,14 @@
+PKGNAME=ros-jazzy-image-tools
+PKGSEC=ros
+PKGDEP="ros-jazzy-ros-workspace opencv ros-jazzy-rclcpp ros-jazzy-rclcpp-components ros-jazzy-sensor-msgs ros-jazzy-std-msgs"
+BUILDDEP="ros-jazzy-ament-cmake ros-jazzy-ament-cmake-pytest ros-jazzy-ament-lint-auto ros-jazzy-ament-lint-common ros-jazzy-launch ros-jazzy-launch-ros ros-jazzy-launch-testing ros-jazzy-launch-testing-ament-cmake ros-jazzy-launch-testing-ros ros-jazzy-rmw-implementation-cmake"
+PKGDES="ROS 2 utilities to capture and play back images to and from DDS subscriptions and publications"
+
+ABTYPE=cmakeninja
+PREFIX="/opt/ros/jazzy"
+ABSPLITDBG=0
+NOSTATIC=0
+CMAKE_AFTER=(
+    "-DCMAKE_PREFIX_PATH=/opt/ros/jazzy"
+    "-DBUILD_TESTING=OFF"
+)
