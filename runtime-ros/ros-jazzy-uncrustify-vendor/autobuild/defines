@@ -1,0 +1,14 @@
+PKGNAME=ros-jazzy-uncrustify-vendor
+PKGSEC=ros
+PKGDEP="ros-jazzy-ros-workspace uncrustify"
+BUILDDEP="ros-jazzy-ament-cmake ros-jazzy-ament-cmake-vendor-package"
+PKGDES="ROS 2 wrapper for Uncrustify"
+
+ABTYPE=cmakeninja
+PREFIX="/opt/ros/jazzy"
+ABSPLITDBG=0
+NOSTATIC=0
+CMAKE_AFTER=(
+    "-DCMAKE_PREFIX_PATH=/opt/ros/jazzy"
+    "-DBUILD_TESTING=OFF"
+)

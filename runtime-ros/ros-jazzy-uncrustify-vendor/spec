@@ -1,0 +1,4 @@
+VER=3.0.1+1
+SRCS="git::commit=tags/release/jazzy/uncrustify_vendor/${VER/+/-}::https://github.com/ros2-gbp/uncrustify_vendor-release.git"
+CHKSUMS="SKIP"
+CHKUPDATE="github::repo=ros2-gbp/uncrustify_vendor-release;pattern=release/jazzy/uncrustify_vendor/.*"
