@@ -1,0 +1,14 @@
+PKGNAME=ros-jazzy-iceoryx-binding-c
+PKGSEC=ros
+PKGDEP="ros-jazzy-ros-workspace"
+BUILDDEP="cmake ros-jazzy-iceoryx-posh ros-jazzy-iceoryx-hoofs"
+PKGDES="Eclipse iceoryx IPC middleware C-Language Binding"
+
+ABTYPE=cmakeninja
+PREFIX="/opt/ros/jazzy"
+ABSPLITDBG=0
+NOSTATIC=0
+CMAKE_AFTER=(
+    "-DCMAKE_PREFIX_PATH=/opt/ros/jazzy"
+    "-DBUILD_TESTING=OFF"
+)
