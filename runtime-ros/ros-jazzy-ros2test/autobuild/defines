@@ -1,0 +1,11 @@
+PKGNAME=ros-jazzy-ros2test
+PKGSEC=ros
+PKGDEP="ros-jazzy-ros-workspace ros-jazzy-launch ros-jazzy-launch-ros ros-jazzy-launch-testing ros-jazzy-launch-testing-ros ros-jazzy-ros2cli ros-jazzy-domain-coordinator"
+BUILDDEP="ros-jazzy-ament-copyright ros-jazzy-ament-flake8 ros-jazzy-ament-pep257 pytest"
+PKGDES="The test command for ROS 2 launch tests"
+
+ABTYPE=python
+PREFIX="/opt/ros/jazzy"
+ABSPLITDBG=0
+NOPYTHON2=1
+ABHOST=noarch
