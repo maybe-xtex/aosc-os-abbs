@@ -1,0 +1,10 @@
+PKGNAME=ros-jazzy-ament-flake8
+PKGSEC=ros
+PKGDEP="ros-jazzy-ros-workspace ros-jazzy-ament-lint flake8 flake8-builtins flake8-comprehensions flake8-docstrings flake8-import-order flake8-quotes"
+PKGDES="CMake API to check Python code for style and syntax conventions with flake8"
+
+ABTYPE=python
+PREFIX="/opt/ros/jazzy"
+ABSPLITDBG=0
+NOPYTHON2=1
+ABHOST=noarch
