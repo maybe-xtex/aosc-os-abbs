@@ -1,0 +1,11 @@
+PKGNAME=ros-jazzy-ament-copyright
+PKGSEC=ros
+PKGDEP="ros-jazzy-ros-workspace ros-jazzy-ament-lint"
+BUILDDEP="ros-jazzy-ament-flake8 ros-jazzy-ament-pep257 pytest"
+PKGDES="CMake API to check source files for copyright and license"
+
+ABTYPE=python
+PREFIX="/opt/ros/jazzy"
+ABSPLITDBG=0
+NOPYTHON2=1
+ABHOST=noarch
