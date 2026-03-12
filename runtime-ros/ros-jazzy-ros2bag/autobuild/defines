@@ -1,0 +1,11 @@
+PKGNAME=ros-jazzy-ros2bag
+PKGSEC=ros
+PKGDEP="ros-jazzy-ros-workspace ros-jazzy-ament-index-python yaml ros-jazzy-rclpy ros-jazzy-ros2cli ros-jazzy-rosbag2-py"
+BUILDDEP="ros-jazzy-ament-copyright ros-jazzy-ament-flake8 ros-jazzy-ament-pep257 ros-jazzy-launch-testing ros-jazzy-launch-testing-ros pytest ros-jazzy-rosbag2-storage-default-plugins ros-jazzy-rosbag2-test-common"
+PKGDES="Rosbag entry point for ROS 2"
+
+ABTYPE=python
+PREFIX="/opt/ros/jazzy"
+ABSPLITDBG=0
+NOPYTHON2=1
+ABHOST=noarch
