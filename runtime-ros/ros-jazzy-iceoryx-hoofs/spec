@@ -1,0 +1,4 @@
+VER=2.0.6+1
+SRCS="git::commit=tags/release/jazzy/iceoryx_hoofs/${VER/+/-}::https://github.com/ros2-gbp/iceoryx-release.git"
+CHKSUMS="SKIP"
+CHKUPDATE="github::repo=ros2-gbp/iceoryx-release;pattern=release/jazzy/iceoryx_hoofs/.*"
