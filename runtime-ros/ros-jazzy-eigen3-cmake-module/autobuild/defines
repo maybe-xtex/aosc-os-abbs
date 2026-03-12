@@ -1,0 +1,14 @@
+PKGNAME=ros-jazzy-eigen3-cmake-module
+PKGSEC=ros
+PKGDEP="ros-jazzy-ros-workspace"
+BUILDDEP="ros-jazzy-ament-cmake ros-jazzy-ament-cmake-copyright ros-jazzy-ament-cmake-lint-cmake"
+PKGDES="ROS 2 CMake module to find Eigen3"
+
+ABTYPE=cmakeninja
+PREFIX="/opt/ros/jazzy"
+ABSPLITDBG=0
+NOSTATIC=0
+CMAKE_AFTER=(
+    "-DCMAKE_PREFIX_PATH=/opt/ros/jazzy"
+    "-DBUILD_TESTING=OFF"
+)
