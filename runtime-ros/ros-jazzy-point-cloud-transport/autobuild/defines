@@ -1,0 +1,14 @@
+PKGNAME=ros-jazzy-point-cloud-transport
+PKGSEC=ros
+PKGDEP="ros-jazzy-ros-workspace ros-jazzy-message-filters ros-jazzy-pluginlib ros-jazzy-rclcpp-components ros-jazzy-rclcpp ros-jazzy-rcpputils ros-jazzy-rmw ros-jazzy-sensor-msgs"
+BUILDDEP="ros-jazzy-ament-cmake-ros ros-jazzy-ament-lint-common ros-jazzy-ament-lint-auto"
+PKGDES="ROS 2 modules to transport PointCloud2 messages in compressed format (and related plugin interface)"
+
+ABTYPE=cmakeninja
+PREFIX="/opt/ros/jazzy"
+ABSPLITDBG=0
+NOSTATIC=0
+CMAKE_AFTER=(
+    "-DCMAKE_PREFIX_PATH=/opt/ros/jazzy"
+    "-DBUILD_TESTING=OFF"
+)
