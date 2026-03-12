@@ -1,0 +1,14 @@
+PKGNAME=ros-jazzy-ament-lint-common
+PKGSEC=ros
+PKGDEP="ros-jazzy-ros-workspace ros-jazzy-ament-cmake-copyright ros-jazzy-ament-cmake-cppcheck ros-jazzy-ament-cmake-cpplint ros-jazzy-ament-cmake-flake8 ros-jazzy-ament-cmake-lint-cmake ros-jazzy-ament-cmake-pep257 ros-jazzy-ament-cmake-uncrustify ros-jazzy-ament-cmake-xmllint ros-jazzy-ament-cmake-core"
+BUILDDEP="ros-jazzy-ament-cmake-core ros-jazzy-ament-cmake-export-dependencies"
+PKGDES="Commonly-used linters for the ament build system and its integration with CMake"
+
+ABTYPE=cmakeninja
+PREFIX="/opt/ros/jazzy"
+ABSPLITDBG=0
+NOSTATIC=0
+CMAKE_AFTER=(
+    "-DCMAKE_PREFIX_PATH=/opt/ros/jazzy"
+    "-DBUILD_TESTING=OFF"
+)
