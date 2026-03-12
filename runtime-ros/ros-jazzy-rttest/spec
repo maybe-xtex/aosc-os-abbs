@@ -1,0 +1,4 @@
+VER=0.17.1+3
+SRCS="git::commit=tags/release/jazzy/rttest/${VER/+/-}::https://github.com/ros2-gbp/realtime_support-release.git"
+CHKSUMS="SKIP"
+CHKUPDATE="github::repo=ros2-gbp/realtime_support-release;pattern=release/jazzy/rttest/.*"
