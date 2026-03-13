@@ -1,4 +1,5 @@
 VER=2.6.13
+REL=1
 SRCS="tbl::https://download.savannah.nongnu.org/releases/oath-toolkit/oath-toolkit-$VER.tar.gz"
 CHKSUMS="sha256::5b5d82e9a4455206d24fcbd7ee58bf4c79398a2e67997d80bd45ae927586b18b"
 CHKUPDATE="anitya::id=2515"
