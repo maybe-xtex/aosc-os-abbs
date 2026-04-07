@@ -3,7 +3,8 @@ PKGSEC=MATE
 PKGDEP="desktop-file-utils enchant libpeas yelp zenity iso-codes \
         gtksourceview-4 pygobject-3 mate-desktop"
 BUILDDEP="mate-common yelp-tools gtk-doc intltool"
-PKGDES="A powerful text editor for MATE"
+PKGDES="Text editor for MATE"
 
-AUTOTOOLS_AFTER="--enable-gtk-doc \
-                 PYTHON=/usr/bin/python3"
+AUTOTOOLS_AFTER=(
+        '--enable-gtk-doc'
+        'PYTHON=/usr/bin/python3')
