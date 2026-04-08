@@ -1,5 +1,4 @@
 PKGNAME=vcdimager
 PKGSEC=utils
 PKGDEP="libcdio libxml2 popt"
-PKGDES="A fully featured mastering suite for authoring, disassembling and analyzing VCDs and Super VCDs"
-
+PKGDES="Fully featured mastering suite for authoring, disassembling and analyzing VCDs and Super VCDs"
