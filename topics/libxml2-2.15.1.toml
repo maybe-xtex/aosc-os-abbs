@@ -1,0 +1,13 @@
+security = true
+must_match_all = false
+
+[name]
+default = "libxml2 2.15.1"
+
+[caution]
+default = "Fixes 10 security vulnerabilities (1 of critical severity and 8 of high severity)"
+zh_CN = "修复 10 个安全漏洞（含 1 个严重漏洞和 8 个高危漏洞）"
+
+[packages-v2]
+"libxml2" = "< 2.15.1"
+"libxml2+32" = "< 2.15.1"
