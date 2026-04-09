@@ -1,7 +1,10 @@
 PKGNAME=uplink-c
 PKGSEC=libs
 PKGDEP="glibc"
-BUILDDEP="go"
+BUILDDEP="go zig"
 PKGDES="C library for Storj V3 Network"
 
 ABTYPE=self
+
+# FIXME: Zig is not available on loongson3.
+FAIL_ARCH="loongson3"
