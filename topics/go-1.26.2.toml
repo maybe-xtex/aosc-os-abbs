@@ -1,0 +1,11 @@
+security = true
+
+[name]
+default = "Go 1.26.2"
+
+[caution]
+default = "Fixes 10 security vulnerabilities (including 3 of high severity and 7 of medium severity)"
+zh_CN = "修复 10 个安全漏洞（含 3 个高危漏洞, 7 个中危漏洞）"
+
+[packages-v2]
+go = "< 1.26.2+tools0.42.0"
