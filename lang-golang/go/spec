@@ -1,4 +1,4 @@
-UPSTREAM_VER=1.26.2
+UPSTREAM_VER=1.26.3
 # Versions of Golang and Go tools
 GO_VER=${UPSTREAM_VER/\~/}
 TOOLS_VER=0.42.0
@@ -6,7 +6,7 @@ TOOLS_VER=0.42.0
 VER="${UPSTREAM_VER}+tools${TOOLS_VER}"
 SRCS="tbl::https://go.dev/dl/go${GO_VER}.src.tar.gz \
       git::commit=tags/v${TOOLS_VER};rename=tools::https://go.googlesource.com/tools"
-CHKSUMS="sha256::2e91ebb6947a96e9436fb2b3926a8802efe63a6d375dffec4f82aa9dbd6fd43b \
+CHKSUMS="sha256::1c646875d0aa8799133184ed57cf79ff24bdefe8c8820470602a9d3d6d9192b8 \
          SKIP"
 CHKUPDATE="anitya::id=1227"
 SUBDIR="go"
