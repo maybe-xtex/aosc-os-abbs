@@ -9,3 +9,6 @@ abinfo "Setting up flutter ..."
 fvm install 3.35.7
 fvm global 3.35.7
 fvm flutter --disable-analytics
+
+### FIXME: To lock pub deps version, remove it when next flclash version released.
+fvm flutter pub upgrade
